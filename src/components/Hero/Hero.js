@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="text-center mt-[10rem] leading-[5rem]">
                 <h1 className="text-[5rem]">Hello, I'm</h1><br />
                 <h1 className="text-[10rem] mb-14">Arnab Saha</h1>
-                <span>
+                <span className='text-[#963cfd]'>
                     <TypeAnimation
                         sequence={[
                             // Same substring at the start will only be typed out once, initially
