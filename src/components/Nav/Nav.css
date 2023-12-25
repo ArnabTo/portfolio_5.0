@@ -1,3 +1,15 @@
+/* span.text-body-4.font-normal.text-metal-600.hover\:text-metal-800.transition-colors.duration-300 {
+    color: white;
+}
+.card {
+    backdrop-filter: blur(1px) saturate(180%);
+    -webkit-backdrop-filter: blur(1px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.81);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+} */
+
 span.text-body-4.font-normal.text-metal-600.hover\:text-metal-800.transition-colors.duration-300 {
     color: white;
+    font-size: 1.5rem;
 }

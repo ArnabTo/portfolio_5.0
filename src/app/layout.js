@@ -1,7 +1,8 @@
-import { Inter } from 'next/font/google'
+import { Inter, Bebas_Neue } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
+const bebas = Bebas_Neue({ weight:'400', style:'normal', subsets:['latin']});
 
 export const metadata = {
   title: 'ARSDEV.',
@@ -11,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={bebas.className}>{children}</body>
     </html>
   )
 }
