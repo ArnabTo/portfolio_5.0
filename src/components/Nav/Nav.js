@@ -4,7 +4,7 @@ import './Nav.css'
 
 const Nav = () => {
     return (
-        <div className="max-w-4xl mx-auto my-8">
+        <div className="max-w-4xl mx-auto mt-8">
             <Navbar fluid={true} className='rounded-md bg-transparent'>
                 <Navbar.Container className="flex items-center justify-center">
                     <Navbar.Container
