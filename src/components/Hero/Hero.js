@@ -7,7 +7,7 @@ import { IconBrandLinkedin } from '@tabler/icons-react';
 import Link from 'next/link';
 const Hero = () => {
     return (
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto h-[100vh]">
             <div className="text-center mt-[5rem] md:mt-[10rem] leading-[7rem]">
                 <h1 className="text-[8rem] md:text-[10rem]"><span className='text-[5rem]'>Hi, I'm</span>Arnab Saha</h1>
                 <span className='text-[#8F00FF]'>
@@ -26,7 +26,7 @@ const Hero = () => {
                         repeat={Infinity}
                     />
                 </span>
-                <button className='btn bg-white text-black px-12 py-3 rounded-sm text-2xl flex justify-center mx-auto'>Resume</button>
+                <button className='btn bg-white text-black px-12 py-3 rounded-sm text-2xl flex justify-center mx-auto transition-all hover:bg-[#8F00FF] hover:text-white'>Resume</button>
                 <span className='flex justify-center my-4 gap-4'>
                     <Link href='https://github.com/ArnabTo' className='hover:text-[#8F00FF] transition-all'><IconBrandGithubFilled size={42} /></Link>
                     <Link href='https://www.linkedin.com/in/itsarnab/' className='hover:text-[#8F00FF] transition-all'><IconBrandLinkedin size={42} /></Link>

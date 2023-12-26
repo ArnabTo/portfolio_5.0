@@ -15,5 +15,5 @@ module.exports = {
       },
     },
   },
-  presets: [require("keep-react/preset")],
+  presets: [require("keep-react/preset"),require('flowbite/plugin'),],
 }
