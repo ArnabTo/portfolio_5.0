@@ -6,16 +6,6 @@
   /* background-attachment: fixed; */
 }
 
-.backdrop {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
-  z-index: -1; /* Place the backdrop behind other content */
-}
-
 h1 {
     display: block;
     animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;

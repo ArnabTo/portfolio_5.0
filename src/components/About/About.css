@@ -7,7 +7,12 @@
 }
 .flex.text-center.border-b button {
     color: #8F00FF;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     font-size: 1.2rem;
     
 }
+@media screen and (min-width: 768px) {
+    .flex.text-center.border-b button {
+        letter-spacing: 2px;
+    }
+  }

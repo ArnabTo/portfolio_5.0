@@ -11,14 +11,12 @@ const Hero = () => {
 
     return (
         <Parallax
-        blur={6}
+            blur={6}
             bgImage='https://i.ibb.co/DgYx2Mb/herobg-1.png'
             strength={-200}
             bgImageAlt='Hero Bg'
         >
-
             <div className="hero h-[100vh] flex justify-center items-center">
-                <div className='backdrop'></div>
                 <div className='hero-container  max-w-6xl mx-auto mb-36 lg:mb-0 '>
                     <motion.div className="text-center pt-[2rem] leading-[7rem]">
                         <motion.h1
