@@ -1,46 +1,31 @@
 "use client";
-import { Button, Navbar } from "keep-react";
+import { IconBrandGithubFilled } from "@tabler/icons-react";
+// import { Button, Navbar } from "keep-react";
+import { Dropdown, Navbar } from "flowbite-react";
+import { Button } from "keep-react";
+import Image from "next/image";
+import Link from "next/link";
 import './Nav.css'
-
+import Lottie from "lottie-react";
+import HomeIcon from '../../assets/homeicon1.json'
+import { Home, CircleUserRound, PanelsTopLeft, Contact } from "lucide-react";
 const Nav = () => {
     return (
         <div className="max-w-4xl mx-auto mt-8">
-            <Navbar fluid={true} className='rounded-md bg-transparent'>
-                <Navbar.Container className="flex items-center justify-center">
-                    <Navbar.Container
-                        tag="ul"
-                        className="lg:flex hidden items-center justify-between gap-8"
-                    >
-                        <Navbar.Link linkName="Home" />
-                        <Navbar.Link linkName="Projects" />
-                        <Navbar.Brand>
-                           <span className="text-white text-4xl">LOGO</span>
-                        </Navbar.Brand>
-                        <Navbar.Link linkName="Projects" />
-                        <Navbar.Link linkName="Blogs" />
-                    </Navbar.Container>
-                    <Navbar.Brand>
-                        <span className="text-black mr-32 md:hidden">gjgvj</span>
-                    </Navbar.Brand>
-                    <Navbar.Collapse collapseType="sidebar">
-                        <Navbar.Container tag="ul" className="flex flex-col gap-5">
-                            <Navbar.Link linkName="Home" />
-                            <Navbar.Link linkName="Projects" />
-                            <Navbar.Link linkName="Blogs" />
-                            <Navbar.Link linkName="News" />
-                            <Navbar.Link linkName="Resources" />
-                        </Navbar.Container>
-                    </Navbar.Collapse>
-
-                    <Navbar.Container className="flex items-center gap-3">
-                        <Navbar.Container
-                            tag="ul"
-                            className="lg:flex hidden items-center justify-between gap-5"
-                        >
-                        </Navbar.Container>
-                        <Navbar.Toggle />
-                    </Navbar.Container>
-                </Navbar.Container>
+            <Navbar fluid rounded className="flex justify-center">
+                <Navbar.Brand className="md:hidden mr-20" href="https://flowbite-react.com">
+                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
+                </Navbar.Brand>
+                <div className="flex md:order-2">
+                    <Navbar.Toggle />
+                </div>
+                <Navbar.Collapse >
+                    <Navbar.Link href="#" active><Home strokeWidth={1.25} size={40} color='#8F00FF' /></Navbar.Link>
+                    <Navbar.Link href="#" ><CircleUserRound strokeWidth={1.25}  size={40} color='#8F00FF' /></Navbar.Link>
+                    <Navbar.Link href="#" >Logo</Navbar.Link>
+                    <Navbar.Link href="#" ><PanelsTopLeft strokeWidth={1.25} size={40} color='#8F00FF' /></Navbar.Link>
+                    <Navbar.Link href="#" ><Contact strokeWidth={1.25} size={40} color='#8F00FF'/></Navbar.Link>
+                </Navbar.Collapse>
             </Navbar>
         </div>
     );

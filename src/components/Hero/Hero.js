@@ -7,6 +7,7 @@ import { IconBrandLinkedin } from '@tabler/icons-react';
 import Link from 'next/link';
 import { delay, motion } from 'framer-motion';
 import { Parallax } from 'react-parallax';
+import Nav from '../Nav/Nav';
 const Hero = () => {
 
     return (
@@ -16,9 +17,10 @@ const Hero = () => {
             strength={-200}
             bgImageAlt='Hero Bg'
         >
+        <Nav/>
             <div className="hero h-[100vh] flex justify-center items-center">
-                <div className='hero-container  max-w-6xl mx-auto mb-36 lg:mb-0 '>
-                    <motion.div className="text-center pt-[2rem] leading-[7rem]">
+                <div className='hero-container  max-w-6xl mx-auto mb-36 lg:mb-12 '>
+                    <motion.div className="text-center leading-[7rem]">
                         <motion.h1
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
