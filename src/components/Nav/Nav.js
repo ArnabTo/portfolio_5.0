@@ -11,9 +11,18 @@ import HomeIcon from '../../assets/homeicon1.json'
 import { Home, CircleUserRound, PanelsTopLeft, Contact } from "lucide-react";
 import { motion } from "framer-motion";
 const Nav = () => {
+
+    const cumsomBg = {
+        backdropFilter: 'blur(16px) saturate(180%)',
+        WebkitBackdropFilter: 'blur(16px) saturate(180%)',
+        backgroundColor: 'rgba(0, 0, 0, 0.75)',
+        borderRadius: '12px',
+        border: '1px solid rgba(255, 255, 255, 0.125)',
+        padding: '10px'
+    }
     return (
         <motion.div className="max-w-4xl mx-auto mt-8">
-            <Navbar fluid rounded className="flex justify-center">
+            <Navbar fluid rounded className="flex justify-center" style={cumsomBg}>
                 <Navbar.Brand className="md:hidden mr-20" href="https://flowbite-react.com">
                     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
                 </Navbar.Brand>
@@ -22,10 +31,10 @@ const Nav = () => {
                 </div>
                 <Navbar.Collapse >
                     <Navbar.Link href="#" active><motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Home strokeWidth={1.25} size={40} color='#8F00FF' /></motion.span></Navbar.Link>
-                    <Navbar.Link href="#" active><motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><CircleUserRound strokeWidth={1.25}  size={40} color='#8F00FF' /></motion.span></Navbar.Link>
+                    <Navbar.Link href="#" active><motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><CircleUserRound strokeWidth={1.25} size={40} color='#8F00FF' /></motion.span></Navbar.Link>
                     <Navbar.Link href="#" >Logo</Navbar.Link>
                     <Navbar.Link href="#" active><motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><PanelsTopLeft strokeWidth={1.25} size={40} color='#8F00FF' /></motion.span></Navbar.Link>
-                    <Navbar.Link href="#" active><motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Contact strokeWidth={1.25} size={40} color='#8F00FF'/></motion.span></Navbar.Link>
+                    <Navbar.Link href="#" active><motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Contact strokeWidth={1.25} size={40} color='#8F00FF' /></motion.span></Navbar.Link>
                 </Navbar.Collapse>
             </Navbar>
         </motion.div>
