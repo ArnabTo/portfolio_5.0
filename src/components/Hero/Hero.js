@@ -17,7 +17,7 @@ const Hero = () => {
             strength={-200}
             bgImageAlt='Hero Bg'
         >
-        <Nav/>
+            <Nav />
             <div className="hero h-[100vh] flex justify-center items-center">
                 <div className='hero-container  max-w-6xl mx-auto mb-36 lg:mb-12 '>
                     <motion.div className="text-center leading-[7rem]">

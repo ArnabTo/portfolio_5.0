@@ -1,9 +1,9 @@
 
 import About from '@/components/About/About'
-import Education from '@/components/Education/Education'
 
 import Hero from '@/components/Hero/Hero'
 import Nav from '@/components/Nav/Nav'
+import Projects from '@/components/Projects/Projects'
 
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
     <main>
      <Hero/>
      <About/>
+     <Projects/>
     </main>
   )
 }

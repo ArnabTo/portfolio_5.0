@@ -22,19 +22,19 @@ const Nav = () => {
     }
     return (
         <motion.div className="max-w-4xl mx-auto mt-8">
-            <Navbar fluid rounded className="flex justify-center" style={cumsomBg}>
-                <Navbar.Brand className="md:hidden mr-20" href="https://flowbite-react.com">
+            <Navbar fluid rounded className="flex justify-center w-full lg:w-1/2 mx-auto" style={cumsomBg}>
+                <Navbar.Brand className="md:hidden mr-36" href="https://flowbite-react.com">
                     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
                 </Navbar.Brand>
                 <div className="flex md:order-2">
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse >
-                    <Navbar.Link href="#" active><motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Home strokeWidth={1.25} size={40} color='#8F00FF' /></motion.span></Navbar.Link>
-                    <Navbar.Link href="#" active><motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><CircleUserRound strokeWidth={1.25} size={40} color='#8F00FF' /></motion.span></Navbar.Link>
-                    <Navbar.Link href="#" >Logo</Navbar.Link>
-                    <Navbar.Link href="#" active><motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><PanelsTopLeft strokeWidth={1.25} size={40} color='#8F00FF' /></motion.span></Navbar.Link>
-                    <Navbar.Link href="#" active><motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Contact strokeWidth={1.25} size={40} color='#8F00FF' /></motion.span></Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="flex flex-row lg:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Home strokeWidth={1.25} size={40} color='#8F00FF' />Home</motion.span></Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="flex flex-row lg:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><CircleUserRound strokeWidth={1.25} size={40} color='#8F00FF' />About</motion.span></Navbar.Link>
+                    <Navbar.Link className="hidden lg:block" href="#" >Logo</Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="flex flex-row lg:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><PanelsTopLeft strokeWidth={1.25} size={40} color='#8F00FF' />Projects</motion.span></Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="flex flex-row lg:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Contact strokeWidth={1.25} size={40} color='#8F00FF' />Contacts</motion.span></Navbar.Link>
                 </Navbar.Collapse>
             </Navbar>
         </motion.div>
