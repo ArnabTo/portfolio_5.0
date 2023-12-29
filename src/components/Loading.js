@@ -1,6 +1,6 @@
-'use client';
+'use client'
 import { Bars } from 'react-loader-spinner';
-const loading = () => {
+const Loading = () => {
     return <Bars
     height="80"
     width="80"
@@ -12,4 +12,4 @@ const loading = () => {
     />;
 };
 
-export default loading;
+export default Loading;

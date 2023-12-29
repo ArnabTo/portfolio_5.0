@@ -22,6 +22,7 @@
     "react": "^18",
     "react-animated-progress-bar": "^1.1.2",
     "react-dom": "^18",
+    "react-loader-spinner": "^6.1.6",
     "react-parallax": "^3.5.1",
     "react-parallax-tilt": "^1.7.179",
     "react-scroll-parallax": "^3.4.5",

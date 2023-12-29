@@ -11,6 +11,7 @@ const Contact = () => {
         border: '1px solid rgba(255, 255, 255, 0.125)',
         padding: '20px'
     }
+  
     return (
         <div className='max-w-7xl mx-auto my-8'>
             <h2 className="text-5xl text-[#8F00FF] text-start my-4">Contact.</h2>
@@ -43,7 +44,7 @@ const Contact = () => {
                 <Link className="col-start-5 flex justify-between items-center" style={customBg} href='#'><Facebook /><ExternalLink /></Link>
                 <Link className="row-start-2 col-start-4 flex justify-between items-center " style={customBg} href='#'><LinkedinIcon /><ExternalLink /></Link>
                 <Link className="row-start-2 col-start-5 flex justify-between items-center" style={customBg} href='#'><Github /><ExternalLink /></Link>
-                <Link className='col-span-2 col-start-4 row-start-3 flex justify-between items-center' style={customBg} href='#'><Mail/><ExternalLink /></Link>
+                <Link className='col-span-2 col-start-4 row-start-3 flex justify-between items-center' style={customBg} href='#'><Mail /><ExternalLink /></Link>
                 <div className='col-span-2 col-start-4 row-start-4' style={customBg}>d</div>
             </div>
         </div>
