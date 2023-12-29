@@ -29,7 +29,7 @@ const About = () => {
         padding:'10px'
 }
 return (
-    <div className="max-w-6xl lg:mx-auto my-44">
+    <div className="max-w-7xl lg:mx-auto my-44">
         <div className="mx-4">
             <h2 className="text-5xl text-[#8F00FF] text-start">About.</h2>
             <div className="flex flex-col lg:flex-row items-center justify-between">

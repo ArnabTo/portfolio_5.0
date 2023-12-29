@@ -19,7 +19,7 @@ const Hero = () => {
         >
             <Nav />
             <div className="hero h-[100vh] flex justify-center items-center">
-                <div className='hero-container  max-w-6xl mx-auto mb-36 lg:mb-12 '>
+                <div className='hero-container  max-w-7xl mx-auto mb-36 lg:mb-12 '>
                     <motion.div className="text-center leading-[7rem]">
                         <motion.h1
                             initial={{ opacity: 0 }}
