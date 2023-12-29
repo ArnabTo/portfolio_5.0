@@ -42,7 +42,7 @@ const Projects = async () => {
                                     id='scale-in-center'
                                 />
                             </motion.div>
-                            <div className="grid grid-cols-4 lg:grid-cols-5 gap-4 my-4">
+                            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 my-4">
                                 {
                                    proj.techs ?  proj.techs?.map((tech, index) =>  <span key={index} className='flex justify-center items-center rounded-md font-inter' style={customBgBadge}>{tech}</span> ) : <h1>loading</h1>
                                 }

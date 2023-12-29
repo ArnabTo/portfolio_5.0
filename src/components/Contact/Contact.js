@@ -15,7 +15,7 @@ const Contact = () => {
         <div className='max-w-7xl mx-auto my-8'>
             <h2 className="text-5xl text-[#8F00FF] text-start my-4">Contact.</h2>
 
-            <div className="grid grid-cols-5 grid-rows-4 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-5 lg:grid-rows-4 gap-4">
                 <div className="col-span-3 row-span-4">
                     <form className="flex  flex-col justify-center gap-4 p-4 flex-1" style={customBg}>
                         <div>
