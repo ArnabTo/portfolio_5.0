@@ -30,11 +30,11 @@ const Nav = () => {
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse >
-                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="flex flex-row lg:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Home strokeWidth={1.25} size={40} color='#8F00FF' />Home</motion.span></Navbar.Link>
-                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="flex flex-row lg:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><CircleUserRound strokeWidth={1.25} size={40} color='#8F00FF' />About</motion.span></Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Home strokeWidth={1.25} size={40} color='#8F00FF' />Home</motion.span></Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><CircleUserRound strokeWidth={1.25} size={40} color='#8F00FF' />About</motion.span></Navbar.Link>
                     <Navbar.Link className="hidden lg:block" href="#" >Logo</Navbar.Link>
-                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="flex flex-row lg:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><PanelsTopLeft strokeWidth={1.25} size={40} color='#8F00FF' />Projects</motion.span></Navbar.Link>
-                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="flex flex-row lg:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Contact strokeWidth={1.25} size={40} color='#8F00FF' />Contacts</motion.span></Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><PanelsTopLeft strokeWidth={1.25} size={40} color='#8F00FF' />Projects</motion.span></Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Contact strokeWidth={1.25} size={40} color='#8F00FF' />Contacts</motion.span></Navbar.Link>
                 </Navbar.Collapse>
             </Navbar>
         </motion.div>
