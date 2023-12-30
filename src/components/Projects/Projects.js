@@ -20,7 +20,7 @@ const Projects = async () => {
         border: '1px solid rgba(255, 255, 255, 0.125)',
         padding: '10px',
     }
-    const res = await fetch('https://portfolio-5-0-server.vercel.app/projects',{
+    const res = await fetch('http://localhost:5000/projects',{
        cache:'no-store', 
     });
     const projects = await res.json();

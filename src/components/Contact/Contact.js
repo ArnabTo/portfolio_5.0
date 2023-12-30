@@ -42,9 +42,9 @@ const Contact = () => {
                 </div>
                 <Link className="col-start-4 flex justify-between items-center" style={customBg} href='#'><Facebook /><ExternalLink /></Link>
                 <Link className="col-start-5 flex justify-between items-center" style={customBg} href='#'><Facebook /><ExternalLink /></Link>
-                <Link className="row-start-2 col-start-4 flex justify-between items-center " style={customBg} href='#'><LinkedinIcon /><ExternalLink /></Link>
-                <Link className="row-start-2 col-start-5 flex justify-between items-center" style={customBg} href='#'><Github /><ExternalLink /></Link>
-                <Link className='col-span-2 col-start-4 row-start-3 flex justify-between items-center' style={customBg} href='#'><Mail /><ExternalLink /></Link>
+                <Link className="row-start-2 col-start-4 flex justify-between items-center " style={customBg} href='https://www.linkedin.com/in/itsarnab/'><LinkedinIcon /><ExternalLink /></Link>
+                <Link className="row-start-2 col-start-5 flex justify-between items-center" style={customBg} href='https://github.com/ArnabTo'><Github /><ExternalLink /></Link>
+                <Link className='col-span-2 col-start-4 row-start-3 flex justify-between items-center' style={customBg} href='mailto:arnabs929@gmail.com'><Mail /><ExternalLink /></Link>
                 <div className='col-span-2 col-start-4 row-start-4' style={customBg}>d</div>
             </div>
         </div>
