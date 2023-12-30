@@ -20,6 +20,7 @@ const Projects = async () => {
         border: '1px solid rgba(255, 255, 255, 0.125)',
         padding: '10px',
     }
+  
     const res = await fetch('http://localhost:5000/projects',{
        cache:'no-store', 
     });
@@ -27,8 +28,8 @@ const Projects = async () => {
     // console.log(projects)
     return (
         <div className="max-w-7xl mx-auto my-24">
-            <h2 className="text-5xl text-[#8F00FF] text-start">Projects.</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <h2 className="text-5xl text-[#8F00FF] text-start">Latest Projects.</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
                 {
                     projects.map(proj =>
                         <div key={proj._id} className='rounded-[23px]' style={customBg}>
@@ -57,8 +58,8 @@ const Projects = async () => {
                             </div>
                         </div>)
                 }
-
             </div>
+           <motion.div className='text-center my-12' whileHover={{ scale: 0.9 }} whileTap={{ scale: 0.8 }}><Link href='/allprojs' className='seeMoreBtn'>See more...</Link></motion.div> 
         </div>
     );
 };
