@@ -1,13 +1,6 @@
 "use client";
-import { IconBrandGithubFilled } from "@tabler/icons-react";
-// import { Button, Navbar } from "keep-react";
 import { Dropdown, Navbar } from "flowbite-react";
-import { Button } from "keep-react";
-import Image from "next/image";
-import Link from "next/link";
 import './Nav.css'
-import Lottie from "lottie-react";
-import HomeIcon from '../../assets/homeicon1.json'
 import { Home, CircleUserRound, PanelsTopLeft, Contact } from "lucide-react";
 import { motion } from "framer-motion";
 const Nav = () => {
