@@ -46,8 +46,8 @@ const Project = ({ proj }) => {
                 <div className="flex justify-between items-center my-3">
                     <h2 className="text-2xl my-4">{proj.title}</h2>
                     <div className="flex gap-4">
-                        <motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} style={customBg} className='rounded-md brightness-50 hover:brightness-100 cursor-pointer'><Link href='#' ><Github size={20} /></Link></motion.span>
-                        <motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} style={customBg} className='rounded-md brightness-50 hover:brightness-100 cursor-pointer'><Link href='#'><Workflow size={20} /></Link></motion.span>
+                        <motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} style={customBg} className='rounded-md brightness-50 hover:brightness-100 cursor-pointer'><Link href={proj.github} ><Github size={20} /></Link></motion.span>
+                        <motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} style={customBg} className='rounded-md brightness-50 hover:brightness-100 cursor-pointer'><Link href={proj.live}><Workflow size={20} /></Link></motion.span>
                     </div>
                 </div>
             </div>

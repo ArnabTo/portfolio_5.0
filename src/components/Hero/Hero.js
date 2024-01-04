@@ -9,6 +9,16 @@ import { delay, motion } from 'framer-motion';
 import { Parallax } from 'react-parallax';
 import Nav from '../Nav/Nav';
 const Hero = () => {
+    const downlaodResume = () => {
+        const resumeFileId = '1Sby-3bnyT0nxHOMTaMhaXsW8mJ4MDZnl';
+        const fileURL = `https://drive.google.com/uc?id=${resumeFileId}`;
+        const fileLInk = document.createElement('a');
+        fileLInk.href = fileURL
+        fileLInk.download = 'resume.pdf';
+        document.body.appendChild(fileLInk);
+        fileLInk.click();
+        document.body.removeChild(fileLInk);
+    };
 
     return (
         <Parallax
@@ -46,6 +56,7 @@ const Hero = () => {
                         <motion.button
                             whileHover={{ scale: 1.2 }}
                             whileTap={{ scale: 0.8 }}
+                            onClick={downlaodResume}
                             className='btn bg-white text-black px-12 py-3 rounded-sm text-2xl flex justify-center mx-auto transition-all hover:bg-[#8F00FF] hover:text-white'>Resume</motion.button>
                         <span className='flex justify-center my-4 gap-4'>
                             <Link href='https://github.com/ArnabTo' className='hover:text-[#8F00FF] transition-all'><IconBrandGithubFilled size={42} /></Link>
