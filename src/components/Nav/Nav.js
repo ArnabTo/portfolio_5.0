@@ -28,7 +28,7 @@ const Nav = () => {
                 </div>
                 <Navbar.Collapse >
                     <Navbar.Link className="bg-transparent" href="#" active>
-                        <Link activeClass="active" to="test1" spy={true} smooth={true} offset={0} duration={500}>
+                        <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500}>
                             <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                                 <Home strokeWidth={1.25} size={40} color='#8F00FF' />Home
                             </motion.span>  </Link></Navbar.Link>

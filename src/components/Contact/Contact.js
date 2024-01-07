@@ -13,7 +13,7 @@ const Contact = () => {
     }
   
     return (
-        <div className='max-w-7xl mx-auto my-8' id='cont'>
+        <div className='max-w-7xl mx-auto my-52' id='cont'>
             <h2 className="text-5xl text-[#8F00FF] text-start my-4">Contact.</h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-5 lg:grid-rows-4 gap-4">

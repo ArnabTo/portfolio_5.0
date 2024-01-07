@@ -1,6 +1,7 @@
 
 import About from '@/components/About/About'
 import Contact from '@/components/Contact/Contact'
+import FooTer from '@/components/Footer/Footer'
 import Hero from '@/components/Hero/Hero'
 import Projects from '@/components/Projects/Projects'
 
@@ -13,6 +14,7 @@ export default function Home() {
      <About/>
      <Projects/>
      <Contact/>
+     <FooTer/>
     </main>
   )
 }
