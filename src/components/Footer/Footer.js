@@ -18,7 +18,7 @@ const FooTer = () => {
             <Footer container style={cumsomBg}>
                 <div className="max-w-7xl mx-auto">
                     <div className="w-full text-center">
-                        <div className="w-full justify-between sm:flex sm:items-center sm:justify-between md:justify-between">
+                        <div className="w-full justify-between sm:flex sm:items-center sm:justify-between md:justify-between py-4">
                             <Footer.LinkGroup>
                                 <Footer.Link href="#" className="text-[#000]">
                                     <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500} className='text-2xl'>
