@@ -1,3 +1,4 @@
+import SmoothScroll from '@/components/SmoothScroll';
 import { Inter, Bebas_Neue } from 'next/font/google'
 import './globals.css'
 
@@ -12,7 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className='scroll-smooth' lang="en">
-      <body className={bebas.className}>{children}</body>
+      <body className={bebas.className}>
+      <SmoothScroll>{children}</SmoothScroll></body>
     </html>
   )
 }
