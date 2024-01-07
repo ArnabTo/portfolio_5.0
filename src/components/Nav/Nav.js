@@ -5,6 +5,8 @@ import { Home, CircleUserRound, PanelsTopLeft, Contact } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Logo from '../../assets/logo.png'
+import { Link } from 'react-scroll/modules'
+
 const Nav = () => {
 
     const cumsomBg = {
@@ -25,11 +27,27 @@ const Nav = () => {
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse >
-                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Home strokeWidth={1.25} size={40} color='#8F00FF' />Home</motion.span></Navbar.Link>
-                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><CircleUserRound strokeWidth={1.25} size={40} color='#8F00FF' />About</motion.span></Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active>
+                        <Link activeClass="active" to="test1" spy={true} smooth={true} offset={0} duration={500}>
+                            <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+                                <Home strokeWidth={1.25} size={40} color='#8F00FF' />Home
+                            </motion.span>  </Link></Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active>
+                        <Link activeClass="active" to="abt" spy={true} smooth={true} offset={0} duration={500}>
+                            <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><CircleUserRound strokeWidth={1.25} size={40} color='#8F00FF' />About</motion.span>
+                        </Link>
+                    </Navbar.Link>
                     <Navbar.Link className="bg-transparent hidden md:block" href="#" active><motion.span className="navItem relative top-4" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}> <Image src={Logo} width={100} height={100} alt="logo" /></motion.span></Navbar.Link>
-                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><PanelsTopLeft strokeWidth={1.25} size={40} color='#8F00FF' />Projects</motion.span></Navbar.Link>
-                    <Navbar.Link className="bg-transparent" href="#" active><motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Contact strokeWidth={1.25} size={40} color='#8F00FF' />Contacts</motion.span></Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active>
+                        <Link activeClass="active" to="projs" spy={true} smooth={true} offset={0} duration={500}>
+                            <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><PanelsTopLeft strokeWidth={1.25} size={40} color='#8F00FF' />Projects</motion.span>
+                        </Link>
+                    </Navbar.Link>
+                    <Navbar.Link className="bg-transparent" href="#" active>
+                        <Link activeClass="active" to="cont" spy={true} smooth={true} offset={0} duration={500}>
+                            <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Contact strokeWidth={1.25} size={40} color='#8F00FF' />Contacts</motion.span>
+                        </Link>
+                    </Navbar.Link>
                 </Navbar.Collapse>
             </Navbar>
         </motion.div>
