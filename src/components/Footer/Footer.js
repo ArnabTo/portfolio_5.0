@@ -8,7 +8,7 @@ const FooTer = () => {
     const cumsomBg = {
         backdropFilter: 'blur(16px) saturate(180%)',
         WebkitBackdropFilter: 'blur(16px) saturate(180%)',
-        backgroundColor: '#fff',
+        backgroundColor: '#8F00FF',
         borderRadius: '12px',
         border: '1px solid rgba(255, 255, 255, 0.125)',
         padding: '10px'
