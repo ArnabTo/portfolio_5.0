@@ -18,15 +18,15 @@ const FooTer = () => {
             <Footer container style={cumsomBg}>
                 <div className="max-w-7xl mx-auto">
                     <div className="w-full text-center">
-                        <div className="w-full justify-between sm:flex sm:items-center sm:justify-between md:justify-between py-4">
+                        <div className="w-full justify-between sm:flex sm:items-center sm:justify-between md:justify-between my-2">
                             <Footer.LinkGroup>
                                 <Footer.Link href="#" className="text-[#fff]">
-                                    <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500} className='text-2xl'>
+                                    <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500} className='text-xl'>
                                         Home
                                     </Link>
                                 </Footer.Link>
                                 <Footer.Link href="#" className="text-[#fff]">
-                                    <Link activeClass="active" to="abt" spy={true} smooth={true} offset={0} duration={500} className='text-2xl'>
+                                    <Link activeClass="active" to="abt" spy={true} smooth={true} offset={0} duration={500} className='text-xl'>
                                         About
                                     </Link>
                                 </Footer.Link>
@@ -36,19 +36,19 @@ const FooTer = () => {
                                     </Link>
                                 </Footer.Link>
                                 <Footer.Link href="#" className="text-[#fff]">
-                                    <Link activeClass="active" to="projs" spy={true} smooth={true} offset={0} duration={500} className='text-2xl'>
+                                    <Link activeClass="active" to="projs" spy={true} smooth={true} offset={0} duration={500} className='text-xl'>
                                         Projects
                                     </Link>
                                 </Footer.Link>
                                 <Footer.Link href="#" className="text-[#fff]">
-                                    <Link activeClass="active" to="cont" spy={true} smooth={true} offset={0} duration={500} className='text-2xl'>
+                                    <Link activeClass="active" to="cont" spy={true} smooth={true} offset={0} duration={500} className='text-xl'>
                                         Contact
                                     </Link>
                                 </Footer.Link>
                             </Footer.LinkGroup>
                         </div>
                         <hr className="my-4 bg-black" />
-                        <Footer.Copyright href="#" by="ARSDEV." year={2024} className='text-[#252525]' />
+                        <p className="">© 2024. Created by ARSDEV.</p>
                     </div>
                 </div>
             </Footer>
