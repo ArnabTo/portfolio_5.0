@@ -1,4 +1,5 @@
 'use client'
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
@@ -20,7 +21,6 @@ import MongoDBLogo from '../../assets/mongodb-icon-1.svg'
 import FirebaseLogo from '../../assets/firebase-1.svg'
 import GithuLogo from '../../assets/github-icon-1.svg'
 import VercelLogo from '../../assets/vercel.svg'
-import { useEffect } from "react";
 const About = () => {
     const customBg = {
         backdropFilter: 'blur(16px) saturate(180%)',
@@ -55,30 +55,30 @@ const About = () => {
                         <h2 className="text-4xl text-[#8F00FF] text-start mb-2">Technologies.</h2>
                         <Tabs aria-label="tabs" style="underline" borderPosition="bottom" data-aos="zoom-in-up" >
                             <Tabs.Item style={{ color: 'red' }} title="Language" >
-                                <div className="grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-1" data-aos="zoom-in-up">
-                                    <span className="flex justify-start items-center gap-1 text-xl">
+                                <div className="grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-1" >
+                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
                                         <Image style={customBg} className="w-[50%]" src={JSLogo} alt='express' />
                                     </span>
                                 </div>
                             </Tabs.Item>
                             <Tabs.Item title="Frame Works" data-aos="zoom-in-up">
                                 <div className="grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-1">
-                                    <span className="flex justify-start items-center gap-1 text-xl border-gray-500">
-                                        <Image style={customBg} className="w-[50%]" src={ReacLogo} alt='reactlogo' />
+                                    <span className="flex justify-start items-center gap-1 text-xl border-gray-500" data-aos="zoom-in-up">
+                                        <Image style={customBg} className="w-[50%]" src={ReacLogo} alt='reactlogo'  />
                                     </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl">
+                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
                                         <Image style={customBg} className="w-[50%]" src={NodeLogo} alt='node' />
                                     </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl">
+                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
                                         <Image style={customBg} className="w-[50%]" src={ExpressLogo} alt='express' />
                                     </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl">
+                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
                                         <Image style={customBg} className="w-[50%]" src={TailwindLogo} alt='tailwind' />
                                     </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl">
+                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
                                         <Image style={customBg} className="w-[50%]" src={BootstrapLogo} alt='reactlogo' />
                                     </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl">
+                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
                                         <Image style={customBg} className="w-[50%]" src={MongooseLogo} alt='mongoose' />
                                     </span>
                                 </div>
