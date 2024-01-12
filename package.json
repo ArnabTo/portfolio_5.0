@@ -13,6 +13,8 @@
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@studio-freight/react-lenis": "^0.0.40",
     "@tabler/icons-react": "^2.44.0",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^10.16.16",
     "gsap": "^3.12.4",
