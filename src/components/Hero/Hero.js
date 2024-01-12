@@ -30,7 +30,7 @@ const Hero = () => {
             <Nav />
             <div className="hero h-[110vh] lg:h-[100vh] flex justify-center items-center">
                 <div className='hero-container  max-w-7xl mx-auto mb-36 lg:mb-12 '>
-                    <motion.div className="text-center leading-[7rem] mt-[12rem] lg:mt-0">
+                    <motion.div className="text-center leading-[7rem] mt-[8rem] lg:mt-0">
                         <motion.h1
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}

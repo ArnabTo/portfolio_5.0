@@ -18,7 +18,7 @@ const Nav = () => {
         padding: '10px'
     }
     return (
-        <motion.div className="max-w-4xl mx-auto mt-8">
+        <motion.div className="max-w-4xl mx-auto md:mt-8">
             <Navbar fluid rounded className="flex justify-center w-full lg:w-1/2 mx-auto" style={cumsomBg}>
                 <Navbar.Brand className="md:hidden mr-36" href="https://flowbite-react.com">
                     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white"><Image src={Logo} width={100} height={100} alt="logo" /></span>
