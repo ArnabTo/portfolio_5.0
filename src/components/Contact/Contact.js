@@ -1,5 +1,9 @@
-import { Button, Checkbox, Label, Textarea, TextInput } from 'flowbite-react';
-import { ArrowBigLeftDash, ExternalLink, Facebook, Github, Linkedin, LinkedinIcon, Mail } from 'lucide-react';
+'use client';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Label, Textarea, TextInput } from 'flowbite-react';
+import { ExternalLink, Facebook, Github, Linkedin, LinkedinIcon, Mail } from 'lucide-react';
 import './Contact.css'
 import Link from 'next/link';
 const Contact = () => {
@@ -11,9 +15,12 @@ const Contact = () => {
         border: '1px solid rgba(255, 255, 255, 0.125)',
         padding: '20px'
     }
-  
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
-        <div className='max-w-7xl mx-auto my-52' id='cont'>
+        <div className='max-w-7xl mx-auto my-52' id='cont' data-aos="zoom-in-up">
             <h2 className="text-5xl text-[#8F00FF] text-start my-4">Contact.</h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-5 lg:grid-rows-4 gap-4">
