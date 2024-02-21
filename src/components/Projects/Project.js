@@ -16,7 +16,8 @@ const Project = ({ proj }) => {
         WebkitBackdropFilter: 'blur(16px) saturate(180%)',
         backgroundColor: 'rgba(0, 0, 0, 0.75)',
         border: '1px solid rgba(255, 255, 255, 0.125)',
-        padding: '15px'
+        padding: '15px',
+        color: '#fff'
     }
     const customBgBadge = {
         backdropFilter: 'blur(16px) saturate(180%)',
@@ -24,6 +25,7 @@ const Project = ({ proj }) => {
         backgroundColor: 'rgba(0, 0, 0, 0.75)',
         border: '1px solid rgba(255, 255, 255, 0.125)',
         padding: '10px',
+        color: '#fff'
     }
 
     

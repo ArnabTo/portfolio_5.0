@@ -18,7 +18,7 @@ const Nav = () => {
         padding: '10px'
     }
     return (
-        <motion.div className="max-w-4xl mx-auto md:mt-8">
+        <motion.div className="max-w-4xl mx-auto">
             <Navbar fluid rounded className="flex justify-center w-full lg:w-1/2 mx-auto" style={cumsomBg}>
                 <Navbar.Brand className="md:hidden mr-36" href="https://flowbite-react.com">
                     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white"><Image src={Logo} width={100} height={100} alt="logo" /></span>
@@ -30,22 +30,22 @@ const Nav = () => {
                     <Navbar.Link className="bg-transparent" href="#" active>
                         <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500}>
                             <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-                                <Home strokeWidth={1.25} size={40} color='#8F00FF' />Home
+                                <Home strokeWidth={1.25} size={40} color='#8F00FF' /> <span className="text-white">Home</span>
                             </motion.span>  </Link></Navbar.Link>
                     <Navbar.Link className="bg-transparent" href="#" active>
                         <Link activeClass="active" to="abt" spy={true} smooth={true} offset={0} duration={500}>
-                            <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><CircleUserRound strokeWidth={1.25} size={40} color='#8F00FF' />About</motion.span>
+                            <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><CircleUserRound strokeWidth={1.25} size={40} color='#8F00FF' /> <span className="text-white">About</span></motion.span>
                         </Link>
                     </Navbar.Link>
                     <Navbar.Link className="bg-transparent hidden md:block" href="#" active><motion.span className="navItem relative top-4" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}> <Image src={Logo} width={100} height={100} alt="logo" /></motion.span></Navbar.Link>
                     <Navbar.Link className="bg-transparent" href="#" active>
                         <Link activeClass="active" to="projs" spy={true} smooth={true} offset={0} duration={500}>
-                            <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><PanelsTopLeft strokeWidth={1.25} size={40} color='#8F00FF' />Projects</motion.span>
+                            <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><PanelsTopLeft strokeWidth={1.25} size={40} color='#8F00FF' /> <span className="text-white">Projects</span></motion.span>
                         </Link>
                     </Navbar.Link>
                     <Navbar.Link className="bg-transparent" href="#" active>
                         <Link activeClass="active" to="cont" spy={true} smooth={true} offset={0} duration={500}>
-                            <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Contact strokeWidth={1.25} size={40} color='#8F00FF' />Contacts</motion.span>
+                            <motion.span className="navItem flex flex-row md:flex-col justify-center items-center" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><Contact strokeWidth={1.25} size={40} color='#8F00FF' /> <span className="text-white">Contact</span></motion.span>
                         </Link>
                     </Navbar.Link>
                 </Navbar.Collapse>

@@ -1,0 +1,88 @@
+[debug] [2024-01-13T15:30:12.234Z] ----------------------------------------------------------------------
+[debug] [2024-01-13T15:30:12.237Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Arnab\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-13T15:30:12.237Z] CLI Version:   13.0.3
+[debug] [2024-01-13T15:30:12.237Z] Platform:      win32
+[debug] [2024-01-13T15:30:12.238Z] Node Version:  v18.17.1
+[debug] [2024-01-13T15:30:12.238Z] Time:          Sat Jan 13 2024 21:30:12 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-01-13T15:30:12.239Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-13T15:30:12.308Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-13T15:30:12.308Z] > authorizing via signed-in user (arnabs929@gmail.com)
+[debug] [2024-01-13T15:30:12.309Z] [iam] checking project arsdev-c0a04 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-13T15:30:12.311Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/arsdev-c0a04:testIamPermissions [none]
+[debug] [2024-01-13T15:30:12.311Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/arsdev-c0a04:testIamPermissions x-goog-quota-user=projects/arsdev-c0a04
+[debug] [2024-01-13T15:30:12.311Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/arsdev-c0a04:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-13T15:30:14.362Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/arsdev-c0a04:testIamPermissions 200
+[debug] [2024-01-13T15:30:14.363Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/arsdev-c0a04:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-13T15:30:14.364Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/arsdev-c0a04 [none]
+[debug] [2024-01-13T15:30:15.099Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/arsdev-c0a04 200
+[debug] [2024-01-13T15:30:15.099Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/arsdev-c0a04 {"projectId":"arsdev-c0a04","projectNumber":"287626117344","displayName":"arsdev","name":"projects/arsdev-c0a04","resources":{"hostingSite":"arsdev-c0a04"},"state":"ACTIVE","etag":"1_0b946145-aca1-4931-a4f9-0384d85d2d9b"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-01-13T15:30:31.386Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/arsdev-c0a04/sites/arsdev-c0a04 [none]
+[debug] [2024-01-13T15:30:32.650Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/arsdev-c0a04/sites/arsdev-c0a04 200
+[debug] [2024-01-13T15:30:32.650Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/arsdev-c0a04/sites/arsdev-c0a04 {"name":"projects/arsdev-c0a04/sites/arsdev-c0a04","defaultUrl":"https://arsdev-c0a04.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.4
+
+[info] 
+   Creating an optimized production build ...
+
+[info] (node:9152) [DEP_WEBPACK_MODULE_UPDATE_HASH] DeprecationWarning: Module.updateHash: Use new ChunkGraph API
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/6) ...
+
+[info]    Generating static pages (1/6) 
+
+[info]    Generating static pages (2/6) 
+
+[info]    Generating static pages (4/6) 
+
+[info]  ✓ Generating static pages (6/6) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    179 kB          309 kB
+├ ○ /_not-found                          875 B          82.9 kB
+├ ○ /allprojects                         930 B           131 kB
+└ ○ /icon.png                            0 B                0 B
++ First Load JS shared by all            82 kB
+  ├ chunks/938-683b1feddd768640.js       26.7 kB
+  ├ chunks/fd9d1056-fb2b705eacc04579.js  53.3 kB
+  ├ chunks/main-app-4e80a9ccebb55603.js  221 B
+  └ chunks/webpack-5e481153260873f8.js   1.84 kB
+
+
+○  (Static)  prerendered as static content
+
+
+[debug] [2024-01-13T15:34:12.582Z] SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at findDependency (C:\Users\Arnab\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\utils.js:188:23)
+    at getNextVersion (C:\Users\Arnab\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\utils.js:189:51)
+    at getConfig (C:\Users\Arnab\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:404:52)
+    at build (C:\Users\Arnab\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:77:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async prepareFrameworks (C:\Users\Arnab\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:221:33)
+    at async deploy (C:\Users\Arnab\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.

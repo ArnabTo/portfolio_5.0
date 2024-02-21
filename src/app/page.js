@@ -1,4 +1,3 @@
-
 import About from '@/components/About/About'
 import Contact from '@/components/Contact/Contact'
 import FooTer from '@/components/Footer/Footer'

@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html className='scroll-smooth' lang="en">
       <body className={bebas.className}>
-      <SmoothScroll>{children}</SmoothScroll>
+           {children}
       </body>
     </html>
   )
