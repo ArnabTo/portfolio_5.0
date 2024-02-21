@@ -42,15 +42,15 @@ const AllProjects = ({ project }) => {
                 </motion.div>
                 <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 my-4">
                     {
-                        project.techs ? project.techs?.map((tech, index) => <span key={index} className='flex justify-center items-center rounded-md font-inter' style={customBgBadge}>{tech}</span>) : <h1>loading</h1>
+                        project.techs ? project.techs?.map((tech, index) => <span key={index} className='flex justify-center items-center rounded-md font-inter text-white' style={customBgBadge}>{tech}</span>) : <h1>loading</h1>
                     }
 
                 </div>
                 <div className="flex justify-between items-center my-3">
                     <h2 className="text-2xl my-4">{project.title}</h2>
                     <div className="flex gap-4">
-                        <motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} style={customBg} className='rounded-md brightness-50 hover:brightness-100 cursor-pointer'><Link href={project.github} ><Github size={20} /></Link></motion.span>
-                        <motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} style={customBg} className='rounded-md brightness-50 hover:brightness-100 cursor-pointer'><Link href={project.live}><Workflow size={20} /></Link></motion.span>
+                        <motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} style={customBg} className='rounded-md brightness-50 hover:brightness-100 cursor-pointer text-white'><Link href={project.github} ><Github size={20} /></Link></motion.span>
+                        <motion.span whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} style={customBg} className='rounded-md brightness-50 hover:brightness-100 cursor-pointer text-white'><Link href={project.live}><Workflow size={20} /></Link></motion.span>
                     </div>
                 </div>
             </div>

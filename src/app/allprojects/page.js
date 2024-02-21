@@ -2,7 +2,6 @@ import { getAllProjects } from "@/utils/getAllProjects";
 import { Home } from "lucide-react";
 import Link from "next/link";
 import AllProjects from "../../components/AllProjects/AllProjects";
-
 const allprojects = async () => {
 
     const allProjects = await getAllProjects();
