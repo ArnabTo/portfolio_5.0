@@ -10,7 +10,7 @@ import { Parallax } from 'react-parallax';
 import Nav from '../Nav/Nav';
 const Hero = () => {
     const downlaodResume = () => {
-        const resumeFileId = '1Sby-3bnyT0nxHOMTaMhaXsW8mJ4MDZnl';
+        const resumeFileId = '1u_zexSUlhWfdNneIVBLgYhoTLqDkGgoz';
         const fileURL = `https://drive.google.com/uc?id=${resumeFileId}`;
         const fileLInk = document.createElement('a');
         fileLInk.href = fileURL

@@ -20,7 +20,7 @@ const Contact = () => {
         AOS.refresh();
     }, []);
     return (
-        <div className='max-w-7xl mx-4 md:mx-auto my-52' id='cont' data-aos="zoom-in-up">
+        <div className='max-w-7xl mx-4 md:mx-auto my-52' id='cont'>
             <h2 className="text-5xl text-[#8F00FF] text-start my-4">Contact.</h2>
 
             <div className=" md:grid grid-cols-1 lg:grid-cols-5 lg:grid-rows-4 gap-4">
@@ -47,7 +47,7 @@ const Contact = () => {
                         <button className='bg-transparent border-[1px] border-[#67676720] p-4 hover:bg-[#8F00FF] text-white transition-all delay-75 rounded-md' type="submit">Submit</button>
                     </form>
                 </div>
-                <Link className="col-start-4 my-2 md:my-0 flex justify-between items-center" style={customBg} href='#'><Facebook  className="text-white"  /><ExternalLink  className="text-white" /></Link>
+                <Link className="col-start-4 my-2 md:my-0 flex justify-between items-center" style={customBg} href='https://www.facebook.com/profile.php?id=100040177386596'><Facebook  className="text-white"  /><ExternalLink  className="text-white" /></Link>
                 <Link className="col-start-5 my-2 md:my-0 flex justify-between items-center" style={customBg} href='#'><Facebook  className="text-white" /><ExternalLink  className="text-white" /></Link>
                 <Link className="row-start-2 my-2 md:my-0 col-start-4 flex justify-between items-center " style={customBg} href='https://www.linkedin.com/in/itsarnab/'><LinkedinIcon  className="text-white" /><ExternalLink  className="text-white" /></Link>
                 <Link className="row-start-2 my-2 md:my-0 col-start-5 flex justify-between items-center" style={customBg} href='https://github.com/ArnabTo'><Github  className="text-white" /><ExternalLink  className="text-white" /></Link>
