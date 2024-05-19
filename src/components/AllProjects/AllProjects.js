@@ -27,7 +27,7 @@ const AllProjects = ({ project }) => {
     }, []);
 
     return (
-        <div data-aos="zoom-in">
+        <div>
             <div key={project._id} className='rounded-[23px] max-w-2xl mx-auto my-8' style={customBg}>
                 <motion.div className="w-full" whileHover={{ scale: 1 }}
                     whileTap={{ scale: 0.9 }}>

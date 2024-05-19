@@ -24,6 +24,9 @@ const Hero = () => {
         backgroundImage: "url('https://i.ibb.co/DgYx2Mb/herobg-1.png')",
         /* Additional CSS properties can be added as needed */
         width: '100%',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed'
       };
 
     return (
