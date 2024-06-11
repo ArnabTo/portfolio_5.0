@@ -36,7 +36,7 @@ const Project = ({ proj }) => {
 
 
     return (
-        <div data-aos="zoom-in">
+        <div>
             <div key={proj._id} className='rounded-[23px] lg:mx-w-2xl' style={customBg}>
                 <motion.div className="w-full" whileHover={{ scale: 0.9 }}
                     whileTap={{ scale: 0.8 }}>

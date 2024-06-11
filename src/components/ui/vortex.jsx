@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export const Vortex = (props) => {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
-  const particleCount = props.particleCount || 700;
+  const particleCount = props.particleCount || 100;
   const particlePropCount = 9;
   const particlePropsLength = particleCount * particlePropCount;
   const rangeY = props.rangeY || 100;

@@ -40,8 +40,9 @@ const About = () => {
         <div className="max-w-7xl lg:mx-auto my-44" id="abt">
             <div className="mx-4">
                 <h2 className="text-5xl text-[#8F00FF] text-start">About.</h2>
-                <div className="flex flex-col lg:flex-row items-center justify-between">
-                    <div className="flex-1">
+                {/* <div className="flex flex-col lg:flex-row items-center justify-between"> */}
+                <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between">
+                    <div>
                         <motion.p className="abt_P tracking-widest mb-6" data-aos="fade-right" data-aos-easing="linear"
                         data-aos-duration="500">
                             Passionate MERN stack developer seeking a
@@ -53,7 +54,7 @@ const About = () => {
                             client expectations.
                         </motion.p>
                         <h2 className="text-4xl text-[#8F00FF] text-start mb-2">Technologies.</h2>
-                        <Tabs aria-label="tabs" style="underline" borderPosition="bottom" data-aos="zoom-in-up" >
+                        {/* <Tabs aria-label="tabs" style="underline" borderPosition="bottom" data-aos="zoom-in-up" >
                             <Tabs.Item style={{ color: 'red' }} title="Language" >
                                 <div className="grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-1" >
                                     <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
@@ -109,10 +110,9 @@ const About = () => {
                                     </span>
                                 </div>
                             </Tabs.Item>
-                        </Tabs>
+                        </Tabs> */}
                     </div>
-                    <div className="flex-1" data-aos="fade-left"  data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000">
+                    <div className="flex-1">
                         <Tilt glareEnable={true}>
                             <Image
                                 style={{ width: '50%', border: '5px solid #8F00FF', borderRadius: '40px', padding: '5px', margin: "auto" }}
