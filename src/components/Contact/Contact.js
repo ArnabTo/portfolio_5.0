@@ -36,7 +36,7 @@ const Contact = () => {
                             <div className="mb-2 block">
                                 <Label htmlFor="email1" value="Your email" className="text-white" />
                             </div>
-                            <TextInput id="email1" name='email' type="email" placeholder="name@flowbite.com" required />
+                            <TextInput id="email1" name='email' type="email" placeholder="name@gmail.com" required />
                         </div>
                         <div className="max-w-md">
                             <div className="mb-2 block">
