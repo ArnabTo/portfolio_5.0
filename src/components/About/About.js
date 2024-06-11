@@ -21,6 +21,7 @@ import MongoDBLogo from '../../assets/mongodb-icon-1.svg'
 import FirebaseLogo from '../../assets/firebase-1.svg'
 import GithuLogo from '../../assets/github-icon-1.svg'
 import VercelLogo from '../../assets/vercel.svg'
+import TechTollTip from "../ToolTip/TechTollTip";
 const About = () => {
     const customBg = {
         backdropFilter: 'blur(16px) saturate(180%)',
@@ -39,10 +40,11 @@ const About = () => {
     return (
         <div className="max-w-7xl lg:mx-auto my-44" id="abt">
             <div className="mx-4">
-                <h2 className="text-5xl text-[#8F00FF] text-start">About.</h2>
+           
                 {/* <div className="flex flex-col lg:flex-row items-center justify-between"> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between">
                     <div>
+                    <h2 className="text-5xl text-[#8F00FF] text-start my-5">About.</h2>
                         <motion.p className="abt_P tracking-widest mb-6" data-aos="fade-right" data-aos-easing="linear"
                         data-aos-duration="500">
                             Passionate MERN stack developer seeking a
@@ -111,6 +113,7 @@ const About = () => {
                                 </div>
                             </Tabs.Item>
                         </Tabs> */}
+                        <TechTollTip/>
                     </div>
                     <div className="flex-1">
                         <Tilt glareEnable={true}>
