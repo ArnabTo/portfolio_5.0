@@ -70,7 +70,7 @@ export const FlipWords = ({
               delay: index * 0.08,
               duration: 0.4,
             }}
-            className="inline-block"
+            className="inline-block bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50"
           >
               {letter === " " ? "\u00A0" : letter}
           </motion.span>
