@@ -25,7 +25,7 @@ function Hero() {
   };
 
   return (
-    <div className="w-[calc(100%-4rem)] mx-auto rounded-md h-screen overflow-hidden">
+    <div className="w-full mx-auto rounded-md h-screen overflow-hidden">
       <Vortex
         backgroundColor="black"
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
@@ -35,25 +35,11 @@ function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="text-[8rem] md:text-[8rem] text-white font-extrabold"><span className='text-[4rem] text-white'>Hi, I'm</span> <br></br> Arnab Saha</motion.h1>
-          {/* <span className='text-[#8F00FF]'>
-                            <TypeAnimation
-                                className='text-[2rem] font-bold'
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Front-End Developer',
-                                    1000, // wait 1s before replacing "Mice" with "Hamsters"
-                                    'MERN Stack Developer',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={10}
-                                style={{ display: 'inline-block' }}
-                                repeat={3}
-                            />
-                        </span> */}
-
-          <div className='text-5xl font-bold my-5'>
+            className=" text-4xl md:text-[8rem] text-white font-extrabold">
+              <span className='text-2xl md:text-[4rem] text-white'>Hi, I'm</span> 
+              <br></br> Arnab Saha</motion.h1>
+    
+          <div className='text-2xl md:text-5xl font-bold md:my-5'>
             <FlipWords words={words} /> <br />
           </div>
 
