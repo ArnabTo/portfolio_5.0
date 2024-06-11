@@ -1,7 +1,7 @@
 import About from '@/components/About/About'
 import Contact from '@/components/Contact/Contact'
 import FooTer from '@/components/Footer/Footer'
-import Hero from '@/components/Hero/Hero'
+import Hero from '@/components/LandingSection/Hero'
 import Projects from '@/components/Projects/Projects'
 
 
@@ -9,11 +9,12 @@ import Projects from '@/components/Projects/Projects'
 export default function Home() {
   return (
     <main>
-     <Hero/>
+      <Hero/>
+     {/* <Hero/> */}
      <About/>
      <Projects/>
      <Contact/>
-     <FooTer/>
+     {/* <FooTer/> */}
     </main>
   )
 }
