@@ -9,7 +9,6 @@ import Link from "next/link";
 import './Project.css'
 
 const Project = ({ proj }) => {
-    // console.log(proj)
 
     const customBg = {
         backdropFilter: 'blur(16px) saturate(180%)',
@@ -22,7 +21,7 @@ const Project = ({ proj }) => {
     const customBgBadge = {
         backdropFilter: 'blur(16px) saturate(180%)',
         WebkitBackdropFilter: 'blur(16px) saturate(180%)',
-        backgroundColor: 'rgba(0, 0, 0, 0.75)',
+        backgroundColor: 'rgba(0, 0, 0, 1)',
         border: '1px solid rgba(255, 255, 255, 0.125)',
         padding: '10px',
         color: '#fff'
@@ -51,7 +50,7 @@ const Project = ({ proj }) => {
                 </motion.div>
                 <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 my-4">
                     {
-                        proj.techs ? proj.techs?.map((tech, index) => <span key={index} className='flex justify-center items-center rounded-md font-inter'  style={customBgBadge}>{tech}</span>) : <h1>loading</h1>
+                        proj.techs ? proj.techs?.map((tech, index) => <span key={index} className='text-black flex justify-center items-center rounded-md font-inter'  style={customBgBadge}>{tech}</span>) : <h1>loading</h1>
                     }
 
                 </div>

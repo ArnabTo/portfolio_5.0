@@ -10,14 +10,14 @@ const ProjectCard = ({ proj }) => {
             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl  dark:hover:shadow-[#8F00FF]/[0.3] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full lg:w-[30rem] xl:w-[35rem] h-auto rounded-xl p-6 border">
                 <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                    className="text-xl font-bold text-black dark:text-white"
                 >
                     {proj?.title}
                 </CardItem>
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                    className="text-black text-sm max-w-sm mt-2 dark:text-neutral-300"
                 >
                     Production grade fitness tracking application. Built with a team of 6 developers.
                 </CardItem>
@@ -47,6 +47,7 @@ const ProjectCard = ({ proj }) => {
                         target="__blank"
                         className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                     >
+
                         Repo →
                     </CardItem>
                     <CardItem
@@ -54,7 +55,7 @@ const ProjectCard = ({ proj }) => {
                         as="button"
                         className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                     >
-                        <Link href='/home'>Preview</Link>
+                        <Link href={proj?.live}>Preview</Link>
                     </CardItem>
                 </div>
             </CardBody>

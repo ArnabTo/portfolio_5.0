@@ -29,7 +29,6 @@ const Navbar = ({ className }) => {
         getProjects();
     }, [])
 
-    console.log(projects)
 
     return (
         <div
