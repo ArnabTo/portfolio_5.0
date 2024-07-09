@@ -4,6 +4,7 @@ import FooTer from '@/components/Footer/Footer'
 import Hero from '@/components/LandingSection/Hero'
 import Navbar from '@/components/Nav/Navbar'
 import Projects from '@/components/Projects/Projects'
+import TechStacks from '@/components/TechStaks/TechStacks'
 
 
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <AboutSec />
+      <TechStacks/>
       <Projects />
       <Contact />
       {/* <FooTer/> */}

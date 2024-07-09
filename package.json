@@ -27,6 +27,7 @@
     "lottie-react": "^2.4.0",
     "lucide": "^0.302.0",
     "lucide-react": "^0.302.0",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "14.0.4",
     "react": "^18",
     "react-animated-progress-bar": "^1.1.2",
