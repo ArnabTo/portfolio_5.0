@@ -24,9 +24,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className="max-w-7xl lg:mx-auto my-44" id="abt">
-            <div className="mx-4">
-
+        <div className="max-w-7xl lg:mx-auto" id="abt">
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between">
                     <div>
                         <h1 className="text-start text-lg md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
@@ -63,7 +61,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 
