@@ -1,6 +1,6 @@
 'use client'
-import About from "../About/About";
 import { LampContainer } from "../ui/lamp";
+import About from "./About";
 
 const AboutSec = () => {
     return (
