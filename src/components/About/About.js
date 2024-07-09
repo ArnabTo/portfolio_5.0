@@ -7,20 +7,6 @@ import PortfoliImg from '../../assets/portfolioimg.jpg';
 import './About.css'
 import { motion } from "framer-motion";
 import Tilt from 'react-parallax-tilt'
-import { Tabs } from "keep-react";
-import ReacLogo from '../../assets/react-2.svg'
-import NodeLogo from '../../assets/nodejs-icon.svg'
-import ExpressLogo from '../../assets/icons8-express-js-500.svg'
-import TailwindLogo from '../../assets/tailwind-css-2.svg'
-import VScodeLogo from '../../assets/tailwind-css-2.svg'
-import JSLogo from '../../assets/logo-javascript.svg'
-import FigmaLogo from '../../assets/figma-5.svg'
-import MongooseLogo from '../../assets/mongoose-1.svg'
-import BootstrapLogo from '../../assets/bootstrap-5-1.svg'
-import MongoDBLogo from '../../assets/mongodb-icon-1.svg'
-import FirebaseLogo from '../../assets/firebase-1.svg'
-import GithuLogo from '../../assets/github-icon-1.svg'
-import VercelLogo from '../../assets/vercel.svg'
 import TechTollTip from "../ToolTip/TechTollTip";
 const About = () => {
     const customBg = {
@@ -40,80 +26,30 @@ const About = () => {
     return (
         <div className="max-w-7xl lg:mx-auto my-44" id="abt">
             <div className="mx-4">
-           
-                {/* <div className="flex flex-col lg:flex-row items-center justify-between"> */}
+
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between">
                     <div>
-                    <h2 className="text-5xl text-[#8F00FF] text-start my-5">About.</h2>
-                        <motion.p className="abt_P tracking-widest mb-6" data-aos="fade-right" data-aos-easing="linear"
-                        data-aos-duration="500">
-                            Passionate MERN stack developer seeking a
-                            challenging role to develop scalable web
-                            applications and contribute to the success
-                            of an innovative organization. Committed to
-                            continuously learning new technologies and
-                            delivering high-quality solutions that exceed
-                            client expectations.
+                        <h1 className="text-start text-lg md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
+                            About
+                        </h1>
+                        <motion.p className="abt_P tracking-widest mb-6 leading-8 text-base text-gray-300" data-aos="fade-right" data-aos-easing="linear"
+                            data-aos-duration="500">
+                            Hello! I am Arnab. I am a professional <span className=" text-purple-500">Full Stack Developer</span> based in Dhaka, Bangladesh.
+                            <br/>
+                            From my passion for Web Development, I have skilled myself in various front-end and back-end technologies.
+                            With my expertise, I have successfully completed several projects.
+                            From creating a fitness app that personalizes your exercise and diet journey to developing a platform for sharing
+                            surplus food, my journey has been filled with opportunities to make a difference. 
+                            <br/>
+                            Projects <span className=" text-purple-500">Fit-Track, Student and Class Management, and Share Plate</span> stand as testaments to my commitment to using technology for good.
+                            <br/>
+                            My tech stack includes <span className=" text-purple-500">HTML, CSS, JavaScript, React, and Next</span> for front-end and <span className=" text-purple-500">Nodejs, ExpressJs, and MongoDB </span>for back-end development.
+                            <br/>
+                            Feel free to explore my portfolio to see the exciting projects I've worked on. I'm always open to new opportunities and collaborations, so don't hesitate to get in touch if you have a project in mind or just want to say hello!
                         </motion.p>
-                        <h2 className="text-4xl text-[#8F00FF] text-start mb-2">Technologies.</h2>
-                        {/* <Tabs aria-label="tabs" style="underline" borderPosition="bottom" data-aos="zoom-in-up" >
-                            <Tabs.Item style={{ color: 'red' }} title="Language" >
-                                <div className="grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-1" >
-                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
-                                        <Image style={customBg} className="w-[50%]" src={JSLogo} alt='express' />
-                                    </span>
-                                </div>
-                            </Tabs.Item>
-                            <Tabs.Item title="Frame Works" data-aos="zoom-in-up">
-                                <div className="grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-1">
-                                    <span className="flex justify-start items-center gap-1 text-xl border-gray-500" data-aos="zoom-in-up">
-                                        <Image style={customBg} className="w-[50%]" src={ReacLogo} alt='reactlogo'  />
-                                    </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
-                                        <Image style={customBg} className="w-[50%]" src={NodeLogo} alt='node' />
-                                    </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
-                                        <Image style={customBg} className="w-[50%]" src={ExpressLogo} alt='express' />
-                                    </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
-                                        <Image style={customBg} className="w-[50%]" src={TailwindLogo} alt='tailwind' />
-                                    </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
-                                        <Image style={customBg} className="w-[50%]" src={BootstrapLogo} alt='reactlogo' />
-                                    </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl" data-aos="zoom-in-up">
-                                        <Image style={customBg} className="w-[50%]" src={MongooseLogo} alt='mongoose' />
-                                    </span>
-                                </div>
-                            </Tabs.Item>
-                            <Tabs.Item title="Database" data-aos="zoom-in-up">
-                                <div className="grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-1">
-                                    <span className="flex justify-start items-center gap-1 text-xl">
-                                        <Image style={customBg} className="w-[50%]" src={MongoDBLogo} alt='express' />
-                                    </span>
-                                </div>
-                            </Tabs.Item>
-                            <Tabs.Item title="Tools" data-aos="zoom-in-up">
-                                <div className="grid grid-cols-2 lg:grid-cols-4 justify-center items-center">
-                                    <span className="flex justify-start items-center gap-1 text-xl">
-                                        <Image style={customBg} className="w-[50%]" src={VScodeLogo} alt='mongoose' />
-                                    </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl">
-                                        <Image style={customBg} className="w-[50%]" src={FigmaLogo} alt='mongoose' />
-                                    </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl">
-                                        <Image style={customBg} className="w-[50%]" src={FirebaseLogo} alt='mongoose' />
-                                    </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl">
-                                        <Image style={customBg} className="w-[50%]" src={GithuLogo} alt='mongoose' />
-                                    </span>
-                                    <span className="flex justify-start items-center gap-1 text-xl">
-                                        <Image style={customBg} className="w-[50%]" src={VercelLogo} alt='mongoose' />
-                                    </span>
-                                </div>
-                            </Tabs.Item>
-                        </Tabs> */}
-                        <TechTollTip/>
+                        {/* <h2 className="text-4xl text-[#8F00FF] text-start mb-2">Technologies.</h2>
+
+                        <TechTollTip /> */}
                     </div>
                     <div className="flex-1">
                         <Tilt glareEnable={true}>
