@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ap.cx/react-fullpage": "^0.3.0",
+    "@fullpage/react-fullpage": "^0.1.42",
     "@lottiefiles/lottie-player": "^2.0.2",
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@studio-freight/react-lenis": "^0.0.40",

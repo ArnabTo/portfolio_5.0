@@ -25,12 +25,12 @@ const About = () => {
 
     return (
         <div className="max-w-7xl lg:mx-auto" id="abt">
-                <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between">
                     <div>
-                        <h1 className="text-start text-lg md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
-                            About
+                        <h1 className="text-center lg:text-start text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
+                            About me
                         </h1>
-                        <motion.p className="abt_P tracking-widest mb-6 leading-8 text-base text-gray-300" data-aos="fade-right" data-aos-easing="linear"
+                        <motion.p className="abt_P tracking-widest mb-6 leading-8 text-base text-gray-300 text-center lg:text-start" data-aos="fade-right" data-aos-easing="linear"
                             data-aos-duration="500">
                             Hello! I am Arnab. I am a professional <span className=" text-purple-500">Full Stack Developer</span> based in Dhaka, Bangladesh.
                             <br/>
@@ -45,9 +45,6 @@ const About = () => {
                             <br/>
                             Feel free to explore my portfolio to see the exciting projects I've worked on. I'm always open to new opportunities and collaborations, so don't hesitate to get in touch if you have a project in mind or just want to say hello!
                         </motion.p>
-                        {/* <h2 className="text-4xl text-[#8F00FF] text-start mb-2">Technologies.</h2>
-
-                        <TechTollTip /> */}
                     </div>
                     <div className="flex-1">
                         <Tilt glareEnable={true}>
