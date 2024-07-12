@@ -6,13 +6,14 @@ import ProjectCard from '../3DCard/ProjectCard';
 const Projects = async () => {
 
     const projects = await getLatesstProjects();
+    console.log(projects)
 
     return (
-        <div className="max-w-7xl mx-4 lg:mx-auto my-24" id='projs'>
+        <div className="max-w-7xl mx-4 lg:mx-auto pt-[40rem]" id='projs'>
             <h1 className="text-center lg:text-start text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
                 Latest Projects
             </h1>
-            <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-1'>
                 <div>
                     <ProjectCard proj={projects[0]} />
                 </div>

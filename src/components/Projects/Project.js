@@ -41,7 +41,7 @@ const Project = ({ proj }) => {
                     whileTap={{ scale: 0.8 }}>
                     <Image
                         className="w-full h-full rounded-lg brightness-100 hover:brightness-90 transition-all"
-                        src={proj.image}
+                        src={proj?.image}
                         width={400}
                         height={400}
                         id='scale-in-center'
@@ -50,7 +50,7 @@ const Project = ({ proj }) => {
                 </motion.div>
                 <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 my-4">
                     {
-                        proj.techs ? proj.techs?.map((tech, index) => <span key={index} className='text-black flex justify-center items-center rounded-md font-inter'  style={customBgBadge}>{tech}</span>) : <h1>loading</h1>
+                        proj?.techs ? proj.techs?.map((tech, index) => <span key={index} className='text-black flex justify-center items-center rounded-md font-inter'  style={customBgBadge}>{tech}</span>) : <h1>loading</h1>
                     }
 
                 </div>

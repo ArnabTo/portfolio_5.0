@@ -20,7 +20,7 @@ const Contact = () => {
         AOS.refresh();
     }, []);
     return (
-        <div className='max-w-7xl mx-4 md:mx-auto my-52' id='cont'>
+        <div id='cont'>
             <h1 className="text-center lg:text-start text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
                 Contact
             </h1>

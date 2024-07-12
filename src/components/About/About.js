@@ -24,14 +24,13 @@ const About = () => {
     }, []);
 
     return (
-        <div className="max-w-7xl lg:mx-auto" id="abt">
-                <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between">
+        <div>
+               <div className="w-full lg:w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-between">
                     <div>
                         <h1 className="text-center lg:text-start text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
                             About me
                         </h1>
-                        <motion.p className="abt_P tracking-widest mb-6 leading-8 text-base text-gray-300 text-center lg:text-start" data-aos="fade-right" data-aos-easing="linear"
-                            data-aos-duration="500">
+                        <motion.p className="abt_P tracking-widest mb-6 leading-8 text-base text-gray-300 text-center lg:text-start">
                             Hello! I am Arnab. I am a professional <span className=" text-purple-500">Full Stack Developer</span> based in Dhaka, Bangladesh.
                             <br/>
                             From my passion for Web Development, I have skilled myself in various front-end and back-end technologies.
