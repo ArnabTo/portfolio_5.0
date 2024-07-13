@@ -20,7 +20,7 @@ const Contact = () => {
         AOS.refresh();
     }, []);
     return (
-        <div id='cont'>
+        <div className="max-w-6xl mx-auto" id='cont'>
             <h1 className="text-center lg:text-start text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
                 Contact
             </h1>
@@ -53,7 +53,6 @@ const Contact = () => {
                 <Link className="row-start-2 my-2 md:my-0 col-start-4 flex justify-between items-center " style={customBg} href='https://www.linkedin.com/in/itsarnab/'><LinkedinIcon className="text-white" /><ExternalLink className="text-white" /></Link>
                 <Link className=" row-start-2 my-2 md:my-0 col-start-5 flex justify-between items-center" style={customBg} href='https://github.com/ArnabTo'><Github className="text-white" /><ExternalLink className="text-white" /></Link>
                 <Link className='col-span-2 my-2 md:my-0 col-start-4 row-start-3 flex justify-between items-center' style={customBg} href='mailto:arnabs929@gmail.com'><Mail className="text-white" /><ExternalLink className="text-white" /></Link>
-                <div className='col-span-2 my-2 md:my-0 col-start-4 row-start-4' style={customBg}>d</div>
             </div>
         </div>
     );

@@ -1,3 +1,5 @@
+const { transform } = require('next/dist/build/swc');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -19,6 +21,7 @@ module.exports = {
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        marquee:"marquee 30s linear infinite"
       },
       keyframes: {
         spotlight: {
@@ -31,6 +34,10 @@ module.exports = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        marquee:{
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' }
+        }
       },
     },
   },
