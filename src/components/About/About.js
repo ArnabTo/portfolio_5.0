@@ -7,7 +7,7 @@ import PortfoliImg from '../../assets/portfolioimg.jpg';
 import './About.css'
 import { motion } from "framer-motion";
 import Tilt from 'react-parallax-tilt'
-import TechTollTip from "../ToolTip/TechTollTip";
+
 const About = () => {
     const customBg = {
         backdropFilter: 'blur(16px) saturate(180%)',
