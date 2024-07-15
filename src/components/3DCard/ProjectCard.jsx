@@ -17,9 +17,9 @@ const ProjectCard = ({ proj }) => {
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-white text-sm max-w-sm mt-2 dark:text-neutral-300"
+                    className="text-white text-sm max-w-[30rem] mt-2 dark:text-neutral-300"
                 >
-                    Production grade fitness tracking application. Built with a team of 6 developers.
+                  {proj?.about}
                 </CardItem>
                 <CardItem
                     as="p"
@@ -35,7 +35,7 @@ const ProjectCard = ({ proj }) => {
                         src={proj?.image}
                         height="1000"
                         width="1000"
-                        className="h-80 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                        className="h-80 w-full object-cover rounded-xl group-hover/card:shadow-xl filter grayscale hover:filter-none "
                         alt="thumbnail"
                     />
                 </CardItem>
