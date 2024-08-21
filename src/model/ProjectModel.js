@@ -22,9 +22,11 @@ const projectSchema = new mongoose.Schema({
         type: [String], 
         required: true,
       },
+      createdAt: { type: Date, default: Date.now }, 
 },{
     collection: 'projectCollection'
 })
 
-const Project = mongoose.model("Project", projectSchema);
-module.exports = Project
+const Project = mongoose.models.Project || mongoose.model("Project", projectSchema);
+
+export default Project;

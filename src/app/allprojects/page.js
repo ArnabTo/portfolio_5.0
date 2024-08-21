@@ -3,10 +3,11 @@ import { Home } from "lucide-react";
 import Link from "next/link";
 import ProjectCard from "@/components/3DCard/ProjectCard";
 
+
 const allprojects = async () => {
 
     const allProjects = await getAllProjects();
-
+    
     return (
         <div className='max-w-7xl mx-auto my-16'>
             <span className="flex justify-between">
@@ -16,9 +17,8 @@ const allprojects = async () => {
                 <Link className="flex flex-col items-center" href='/'><Home strokeWidth={1.25} size={40} color='#8F00FF' />Back to Home</Link>
             </span>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-8">
-
                 {
-                    allProjects.map(project => <ProjectCard key='project._id' proj={project} />)
+                    allProjects.data.map(project => <ProjectCard key='project._id' proj={project} />)
                 }
             </div>
         </div>

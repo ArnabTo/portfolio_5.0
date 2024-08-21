@@ -6,7 +6,6 @@ import ProjectCard from '../3DCard/ProjectCard';
 const Projects = async () => {
 
     const projects = await getLatesstProjects();
-    // console.log(projects)
 
     return (
         <div className="max-w-7xl mx-4 lg:mx-auto" id='projs'>
@@ -15,16 +14,16 @@ const Projects = async () => {
             </h1>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-1'>
                 <div>
-                    <ProjectCard proj={projects[0]} />
+                    <ProjectCard proj={projects?.data[0]} />
                 </div>
                 <div>
-                    <ProjectCard proj={projects[1]} />
+                    <ProjectCard proj={projects?.data[1]} />
                 </div>
                 <div>
-                    <ProjectCard proj={projects[2]} />
+                    <ProjectCard proj={projects?.data[2]} />
                 </div>
                 <div>
-                    <ProjectCard proj={projects[3]} />
+                    <ProjectCard proj={projects?.data[3]} />
                 </div>
             </div>
             <SeeMBtn />

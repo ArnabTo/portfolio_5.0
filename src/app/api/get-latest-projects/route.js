@@ -1,5 +1,5 @@
 import connectDB from "@/lib/connectDB";
-import Project, { create } from "@/model/ProjectModel";
+import Project from "@/model/ProjectModel";
 
 export async function GET() {
     await connectDB();

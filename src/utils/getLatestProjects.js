@@ -1,4 +1,7 @@
-export const getLatesstProjects = async () =>{
-    const res = await fetch('https://portfolio-5-0-server.vercel.app/projects')
-    return res.json();
+import axios from "axios"
+
+export const getLatesstProjects = async () => {
+    const response = await axios.get('http://localhost:3000/api/get-latest-projects');
+ console.log(response.data)
+    return response.data;
 }

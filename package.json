@@ -20,7 +20,7 @@
     "@tsparticles/slim": "^3.5.0",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
-    "axios": "^1.6.8",
+    "axios": "^1.7.4",
     "clsx": "^2.1.1",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^10.18.0",
