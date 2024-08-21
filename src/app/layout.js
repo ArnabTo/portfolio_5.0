@@ -4,6 +4,7 @@ import './globals.css'
 const inter = Inter({ weight:['100', '200', '300', '400', '500', '600','700', '800',], subsets: ['latin'] })
 const poppins = Poppins({ weight:['100', '200', '300', '400', '500', '600','700', '800',], subsets: ['latin'] })
 const bebas = Bebas_Neue({ weight:'400', style:'normal', subsets:['latin']});
+import { Toaster } from '@/components/ui/toaster';
 
 export const metadata = {
   title: 'ARSDEV.',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     <html className='scroll-smooth' lang="en">
       <body className={poppins.className}>
            {children}
+           <Toaster/>
       </body>
     </html>
   )

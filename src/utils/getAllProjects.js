@@ -1,10 +1,7 @@
 import axios from "axios"
 
 export const getAllProjects = async () => {
-    const response = await axios.get('https://arsdevs.vercel.app/api/get-projects');
-
-    if(response.data.success === false) {
-        throw new Error(response.data.message);
-    }
+    const response = await axios.get('/api/get-projects');
+    console.log(response.data);
     return response.data;
 }

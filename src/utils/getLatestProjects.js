@@ -1,10 +1,14 @@
 import axios from "axios"
 
 export const getLatesstProjects = async () => {
-    const response = await axios.get('https://arsdevs.vercel.app/api/get-latest-projects');
-    
-    if(response.data.success === false) {
-        throw new Error(response.data.message);
+
+    try {
+        const response = await axios.get('http://localhost:3000/api/get-latest-projects');
+        console.log(response.data);
+        
+        return response.data;
+    } catch (error) {
+        console.log(error);
+        return error
     }
-    return response.data;
 }
