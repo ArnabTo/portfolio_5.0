@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useToast } from "../ui/use-toast";
 import { Loader } from "lucide-react";
 import axios from "axios";
+import fetchProjects from "@/utils/fetchLatestProjects";
 
 const transition = {
     type: "spring",
@@ -22,22 +23,20 @@ const Navbar = ({ className }) => {
     const [loading, setLoading] = useState(true);
     const { toast } = useToast();
 
+
     useEffect(() => {
-        const fetchProjects = async () => {
+
+        const getProjects = async () => {
             try {
-                const response = await axios.get('/api/get-latest-projects');
-                if (response.data.success) {
-                    setProjects(response.data.data || []);
-                    if (response.data.data && response.data.data.length > 0) {
+                const projs = await fetchProjects();
+                if (projs && projs.length > 0) {
+                    setLoading(false);
+                    setProjects(projs || []);
+                    
+                    if (projects && projects.length > 0) {
                         toast({
                             title: 'Success',
                             description: 'Projects fetched successfully',
-                            variant: 'default',
-                        });
-                    } else {
-                        toast({
-                            title: 'No Projects',
-                            description: 'No projects available.',
                             variant: 'default',
                         });
                     }
@@ -45,19 +44,13 @@ const Navbar = ({ className }) => {
                     throw new Error(response.data.message || 'Failed to fetch projects');
                 }
             } catch (error) {
-                toast({
-                    title: 'Error',
-                    description: error.message,
-                    variant: 'destructive',
-                });
+                console.log(error)
             } finally {
                 setLoading(false);
             }
-        };
-
-        fetchProjects();
-    }, [toast]);
-
+        }
+        getProjects();
+    }, [projects.data, toast])
 
     return (
         <div

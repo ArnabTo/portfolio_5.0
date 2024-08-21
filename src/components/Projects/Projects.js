@@ -4,8 +4,9 @@ import SeeMBtn from './SeeMBtn';
 import ProjectCard from '../3DCard/ProjectCard';
 import { useEffect, useState } from 'react';
 import { useToast } from '../ui/use-toast';
-import axios from 'axios';
 import { Loader } from 'lucide-react';
+import fetchProjects from '@/utils/fetchLatestProjects';
+
 const Projects = () => {
 
     const [projects, setProjects] = useState([]);
@@ -13,41 +14,68 @@ const Projects = () => {
     const { toast } = useToast();
 
     useEffect(() => {
-        const fetchProjects = async () => {
+
+        const getProjects = async () => {
             try {
-                const response = await axios.get('/api/get-latest-projects');
-                console.log(response.data)
-                if (response.data.success) {
-                    setProjects(response.data.data || []);
-                    if (response.data.data && response.data.data.length > 0) {
+                const projs = await fetchProjects();
+
+                if (projs && projs.length > 0) {
+                    setLoading(false);
+                    setProjects(projs || []);
+                    if (projects && projects.length > 0) {
                         toast({
                             title: 'Success',
                             description: 'Projects fetched successfully',
                             variant: 'default',
                         });
-                    } else {
-                        toast({
-                            title: 'No Projects',
-                            description: 'No projects available.',
-                            variant: 'default',
-                        });
-                    }
+                    } 
                 } else {
                     throw new Error(response.data.message || 'Failed to fetch projects');
                 }
             } catch (error) {
-                toast({
-                    title: 'Error',
-                    description: error.message,
-                    variant: 'destructive',
-                });
-            } finally {
+                console.log(error)
+            }finally {
                 setLoading(false);
             }
-        };
+        }
+        getProjects();
+    }, [projects.data, toast])
+    // useEffect(() => {
+    //     const fetchProjects = async () => {
+    //         try {
+    //             const response = await axios.get('/api/get-latest-projects');
+    //             console.log(response.data)
+    //             if (response.data.success) {
+    //                 setProjects(response.data.data || []);
+    //                 if (response.data.data && response.data.data.length > 0) {
+    //                     toast({
+    //                         title: 'Success',
+    //                         description: 'Projects fetched successfully',
+    //                         variant: 'default',
+    //                     });
+    //                 } else {
+    //                     toast({
+    //                         title: 'No Projects',
+    //                         description: 'No projects available.',
+    //                         variant: 'default',
+    //                     });
+    //                 }
+    //             } else {
+    //                 throw new Error(response.data.message || 'Failed to fetch projects');
+    //             }
+    //         } catch (error) {
+    //             toast({
+    //                 title: 'Error',
+    //                 description: error.message,
+    //                 variant: 'destructive',
+    //             });
+    //         } finally {
+    //             setLoading(false);
+    //         }
+    //     };
 
-        fetchProjects();
-    }, [toast]);
+    //     fetchProjects();
+    // }, [toast]);
 
     return (
         <div className="max-w-7xl mx-4 lg:mx-auto" id='projs'>
