@@ -10,7 +10,7 @@ export default async function fetchProjects() {
     console.log(baseUrl)
 
     try {
-        const response = await axios.get(`${baseUrl}/api/get-latest-projects`);
+        const response = await axios.get('/api/get-latest-projects');
         console.log(response.data)
         if (response.data.success) {
             return response.data.data;

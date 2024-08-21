@@ -11,42 +11,71 @@ const Projects = () => {
     const [loading, setLoading] = useState(true); 
     const { toast } = useToast();
 
+
+
     useEffect(() => {
         const fetchProjects = async () => {
-            try {
+
+            try{
                 const response = await axios.get('/api/get-projects');
-                
-                if (response.data.success) {
-                    setProjects(response.data.data || []);
-                    if (response.data.data && response.data.data.length > 0) {
-                        toast({
-                            title: 'Success',
-                            description: 'Projects fetched successfully',
-                            variant: 'default',
-                        });
-                    } else {
-                        toast({
-                            title: 'No Projects',
-                            description: 'No projects available.',
-                            variant: 'default',
-                        });
-                    }
-                } else {
-                    throw new Error(response.data.message || 'Failed to fetch projects');
-                }
-            } catch (error) {
+                setProjects(response.data.data || []);
+
                 toast({
-                    title: 'Error',
-                    description: error.message,
-                    variant: 'destructive',
-                });
-            } finally {
+                    title: 'Success',
+                    description: 'Projects fetched successfully',
+                    variant: 'default',
+                })
+            
+            }catch(error){
+            toast({
+                title: 'Error',
+                description: error.message,
+                variant: 'destructive',
+            })
+            }finally{
                 setLoading(false);
             }
-        };
-
+        }
         fetchProjects();
-    }, [toast]);
+    }, [toast])
+
+
+    // useEffect(() => {
+    //     const fetchProjects = async () => {
+    //         try {
+    //             const response = await axios.get('/api/get-projects');
+                
+    //             if (response.data.success) {
+    //                 setProjects(response.data.data || []);
+    //                 if (response.data.data && response.data.data.length > 0) {
+    //                     toast({
+    //                         title: 'Success',
+    //                         description: 'Projects fetched successfully',
+    //                         variant: 'default',
+    //                     });
+    //                 } else {
+    //                     toast({
+    //                         title: 'No Projects',
+    //                         description: 'No projects available.',
+    //                         variant: 'default',
+    //                     });
+    //                 }
+    //             } else {
+    //                 throw new Error(response.data.message || 'Failed to fetch projects');
+    //             }
+    //         } catch (error) {
+    //             toast({
+    //                 title: 'Error',
+    //                 description: error.message,
+    //                 variant: 'destructive',
+    //             });
+    //         } finally {
+    //             setLoading(false);
+    //         }
+    //     };
+
+    //     fetchProjects();
+    // }, [toast]);
 
     return (
         <div className='max-w-7xl mx-auto my-16'>
