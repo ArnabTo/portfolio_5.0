@@ -2,9 +2,10 @@ import axios from "axios";
 
 export default async function fetchProjects() {
 
-    const baseUrl = process.env.NODE_ENV === 'production' 
-    ? 'https://arsdevs.vercel.app' 
-    : 'http://localhost:3000';
+    // const baseUrl = process.env.NODE_ENV === 'production' 
+    // ? 'https://arsdevs.vercel.app' 
+    // : 'http://localhost:3000';
+    const baseUrl = 'https://arsdevs.vercel.app';
 
     console.log(baseUrl)
 
