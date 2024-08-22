@@ -1,9 +1,7 @@
 import SmoothScroll from '@/components/SmoothScroll';
-import { Inter, Bebas_Neue, Poppins } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
-const inter = Inter({ weight:['100', '200', '300', '400', '500', '600','700', '800',], subsets: ['latin'] })
 const poppins = Poppins({ weight:['100', '200', '300', '400', '500', '600','700', '800',], subsets: ['latin'] })
-const bebas = Bebas_Neue({ weight:'400', style:'normal', subsets:['latin']});
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata = {
