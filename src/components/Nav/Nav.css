@@ -13,9 +13,9 @@ nav.bg-white.px-2.py-2\.5.dark\:border-gray-700.dark\:bg-gray-800.sm\:px-4.round
     background: transparent;
 }
 .navItem {
-    font-family: 'Nunito', sans-serif;
+    fontFamily: 'Nunito', sans-serif;
 }
 /* span.text-body-4.font-normal.text-metal-600.hover\:text-metal-800.transition-colors.duration-300 {
     color: white;
-    font-size: 1.5rem;
+    fontSize: 1.5rem;
 } */
