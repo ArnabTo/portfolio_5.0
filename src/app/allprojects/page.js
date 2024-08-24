@@ -18,6 +18,7 @@ const Projects = () => {
 
             try{
                 const response = await axios.get('/api/get-projects');
+                response.setHeader('Cache-Control', 'no-store');
                 setProjects(response.data.data || []);
 
                 toast({
