@@ -7,7 +7,7 @@ export const LampContainer = ({children, className}) => {
   return (
     <div
       className={cn(
-        "relative flex min-h-screen md:h-[170vh] lg:h-[130vh] xl:h-[100vh] flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
+        "relative flex min-h-screen md:h-[200vh] lg:h-[180vh] xl:h-[120vh] flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
         className
       )}
     >
@@ -71,7 +71,7 @@ export const LampContainer = ({children, className}) => {
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
       </div>
 
-      <div className="relative top-80 md:top-96 z-50 flex -translate-y-80 flex-col items-center px-5 py-16">
+      <div className="relative top-80 md:top-72 lg:top-64 z-50 flex -translate-y-80 flex-col items-center px-5 py-16 lg:py-0">
         {children}
       </div>
     </div>

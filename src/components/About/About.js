@@ -25,7 +25,7 @@ const About = () => {
 
     return (
         <div>
-               <div className="w-full lg:w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-between pb-24">
+               <div className="w-full lg:w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-between">
                     <div>
                         <h1 className="text-center lg:text-start text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
                             About me
