@@ -40,42 +40,8 @@ const Projects = () => {
         }
         getProjects();
     }, [projects.data, toast])
-    // useEffect(() => {
-    //     const fetchProjects = async () => {
-    //         try {
-    //             const response = await axios.get('/api/get-latest-projects');
-    //             console.log(response.data)
-    //             if (response.data.success) {
-    //                 setProjects(response.data.data || []);
-    //                 if (response.data.data && response.data.data.length > 0) {
-    //                     toast({
-    //                         title: 'Success',
-    //                         description: 'Projects fetched successfully',
-    //                         variant: 'default',
-    //                     });
-    //                 } else {
-    //                     toast({
-    //                         title: 'No Projects',
-    //                         description: 'No projects available.',
-    //                         variant: 'default',
-    //                     });
-    //                 }
-    //             } else {
-    //                 throw new Error(response.data.message || 'Failed to fetch projects');
-    //             }
-    //         } catch (error) {
-    //             toast({
-    //                 title: 'Error',
-    //                 description: error.message,
-    //                 variant: 'destructive',
-    //             });
-    //         } finally {
-    //             setLoading(false);
-    //         }
-    //     };
 
-    //     fetchProjects();
-    // }, [toast]);
+    console.log(projects)
 
     return (
         <div className="max-w-7xl mx-4 lg:mx-auto" id='projs'>

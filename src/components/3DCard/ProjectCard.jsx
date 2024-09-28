@@ -2,6 +2,7 @@ import React from 'react';
 import { CardBody, CardContainer, CardItem } from '../ui/3d-card';
 import Image from 'next/image';
 import Link from 'next/link';
+import { HoverBorderGradient } from '../ui/hover-border-gradient';
 const ProjectCard = ({ proj }) => {
     const { title, about, techs, image, github, live } = proj;
     console.log(proj)
@@ -20,17 +21,29 @@ const ProjectCard = ({ proj }) => {
                     translateZ="60"
                     className="text-white text-sm max-w-[30rem] mt-2 dark:text-neutral-300"
                 >
-                  {about}
+                    {about}
                 </CardItem>
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 "
+                    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-4 lg:gap-6 mt-2"
                 >
                     {
-                        techs ? techs?.map((tech, index) => <span key={index} className='flex justify-center items-center rounded-md bg-white text-black px-5' >{tech}</span>) : <span>loading</span>
+                        techs ? techs.map((tech, index) => (
+                            <div className="flex justify-center text-center" key={index}>
+                                <HoverBorderGradient
+                                    containerClassName="rounded-md"
+                                    as="button"
+                                    className="w-full bg-white text-black text-sm px-2 py-1 hover:bg-gray-200 transition-all"
+                                >
+                                    <span>{tech}</span>
+                                </HoverBorderGradient>
+                            </div>
+                        ))
+                            : <span>loading...</span>
                     }
                 </CardItem>
+
                 <CardItem translateZ="100" className="w-full mt-4">
                     <Image
                         src={image}
