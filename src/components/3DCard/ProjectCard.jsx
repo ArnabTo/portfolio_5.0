@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { HoverBorderGradient } from '../ui/hover-border-gradient';
 const ProjectCard = ({ proj }) => {
     const { title, about, techs, image, github, live } = proj;
-    console.log(proj)
 
     return (
         <CardContainer className="inter-var">
