@@ -1,12 +1,10 @@
 'use client';
-import { Spotlight } from "../ui/Spotlight";
 import { FlipWords } from "../ui/flip-words";
 import Link from "next/link";
 import { IconMailFilled } from '@tabler/icons-react';
 import { IconBrandGithubFilled } from '@tabler/icons-react';
 import { IconBrandLinkedin } from '@tabler/icons-react';
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
-import GitHubGif  from '@/assets/Github.gif';
 const Hero = () => {
 
   const words = ['Front-end Developer', 'MERN stack Developer'];

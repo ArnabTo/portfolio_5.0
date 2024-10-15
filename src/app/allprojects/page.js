@@ -8,36 +8,37 @@ import { Home, Loader } from "lucide-react";
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
-    const [loading, setLoading] = useState(true); 
+    const [loading, setLoading] = useState(true);
     const { toast } = useToast();
 
 
     useEffect(() => {
         const fetchProjects = async () => {
 
-            try{
-                const response = await axios.get('/api/get-projects',  { cache: 'no-store' });
+            try {
+                const response = await axios.get('/api/get-projects', { cache: 'no-store' });
                 setProjects(response.data.data || []);
 
+                // toast({
+                //     title: 'Success',
+                //     description: 'Projects fetched successfully',
+                //     variant: 'default',
+                // })
+
+            } catch (error) {
                 toast({
-                    title: 'Success',
-                    description: 'Projects fetched successfully',
-                    variant: 'default',
+                    title: 'Error',
+                    description: error.message,
+                    variant: 'destructive',
                 })
-            
-            }catch(error){
-            toast({
-                title: 'Error',
-                description: error.message,
-                variant: 'destructive',
-            })
-            }finally{
+            } finally {
                 setLoading(false);
             }
         }
         fetchProjects();
     }, [toast])
 
+    const skeletonArray = ['', '', '', '', ''];
     return (
         <div className='max-w-7xl mx-auto my-16'>
             <span className="flex justify-between">
@@ -51,7 +52,23 @@ const Projects = () => {
 
             {
                 loading ?
-                    <div className="w-full h-screen flex justify-center items-center"> <Loader className="animate-spin" size={50} color="#ffffff" /></div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-8">
+                        {
+                            skeletonArray.map(() => (
+                                <div className="w-5/6 bg-[#1b1b2081] h-[30rem] rounded-lg p-10 space-y-5 mb-10">
+                                    <div className="w-24 h-8 bg-[#5555553f] rounded-lg"></div>
+                                    <div className="w-full h-8 bg-[#5555553f] rounded-lg"></div>
+                                    <div className="grid grid-cols-4 gap-2">
+                                        <div className="w-full h-8 bg-[#5555553f] rounded-lg"></div>
+                                        <div className="w-full h-8 bg-[#5555553f] rounded-lg"></div>
+                                        <div className="w-full h-8 bg-[#5555553f] rounded-lg"></div>
+                                        <div className="w-full h-8 bg-[#5555553f] rounded-lg"></div>
+                                    </div>
+                                    <div className="w-full h-56 bg-[#5555553f] rounded-lg"></div>
+                                </div>
+                            ))
+                        }
+                    </div>
                     :
                     projects.length > 0
                         ?
@@ -61,7 +78,7 @@ const Projects = () => {
                             }
                         </div>
                         :
-                        <div className="w-full h-screen flex justify-center items-center text-5xl text-white font-extrabold">No projects available.</div> 
+                        <div className="w-full h-screen flex justify-center items-center text-5xl text-white font-extrabold">No projects available.</div>
             }
 
         </div>
