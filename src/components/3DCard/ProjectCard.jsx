@@ -25,18 +25,12 @@ const ProjectCard = ({ proj }) => {
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-4 lg:gap-6 mt-2"
+                    className="flex justify-between items-center gap-3 mt-3"
                 >
                     {
                         techs ? techs.map((tech, index) => (
-                            <div className="flex justify-center text-center" key={index}>
-                                <HoverBorderGradient
-                                    containerClassName="rounded-md"
-                                    as="button"
-                                    className="w-full bg-white text-black text-sm px-2 py-1 hover:bg-gray-200 transition-all"
-                                >
-                                    <span>{tech}</span>
-                                </HoverBorderGradient>
+                        <div className="flex justify-center text-center" key={index}>
+                                    <div className='bg-white  h-fit px-3 py-1 rounded-md'>{tech}</div>
                             </div>
                         ))
                             : <span>loading...</span>

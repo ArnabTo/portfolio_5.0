@@ -16,14 +16,8 @@ const Projects = () => {
         const fetchProjects = async () => {
 
             try {
-                const response = await axios.get('/api/get-projects', { cache: 'no-store' });
+                const response = await axios.get('/api/get-projects', { cache: 'no-store'});
                 setProjects(response.data.data || []);
-
-                // toast({
-                //     title: 'Success',
-                //     description: 'Projects fetched successfully',
-                //     variant: 'default',
-                // })
 
             } catch (error) {
                 toast({

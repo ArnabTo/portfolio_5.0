@@ -18,7 +18,6 @@ const Projects = () => {
         const getProjects = async () => {
             try {
                 const projs = await fetchProjects();
-
                 if (projs && projs.length > 0) {
                     setLoading(false);
                     setProjects(projs || []);
