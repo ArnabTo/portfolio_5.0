@@ -10,7 +10,7 @@ const Hero = () => {
   const words = ['Front-end Developer', 'MERN stack Developer'];
 
   const downlaodResume = () => {
-    const resumeFileId = '1u_zexSUlhWfdNneIVBLgYhoTLqDkGgoz';
+    const resumeFileId = '1GCq0v4joSEcY0paVdS_qFsIcVi6N0Zkl';
     const fileURL = `https://drive.google.com/uc?id=${resumeFileId}`;
     const fileLInk = document.createElement('a');
     fileLInk.href = fileURL
