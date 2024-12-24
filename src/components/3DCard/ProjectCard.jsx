@@ -2,13 +2,13 @@ import React from 'react';
 import { CardBody, CardContainer, CardItem } from '../ui/3d-card';
 import Image from 'next/image';
 import Link from 'next/link';
-import { HoverBorderGradient } from '../ui/hover-border-gradient';
+import '../../app/globals.css';
 const ProjectCard = ({ proj }) => {
     const { title, about, techs, image, github, live } = proj;
 
     return (
-        <CardContainer className="inter-var cursor-pointer">
-            <CardBody className=" bg-zinc-950 relative group/card dark:hover:shadow-2xl  dark:hover:shadow-[#8F00FF]/[0.3] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full lg:w-[30rem] xl:w-full h-auto rounded-3xl p-6 border group">
+        <CardContainer className="inter-var cursor-pointer h-full">
+            <CardBody className="bg-zinc-950 flex flex-col relative group/card dark:hover:shadow-2xl dark:hover:shadow-[#8F00FF]/[0.3] dark:bg-black dark:border-white/[0.2]  w-full lg:w-[30rem] xl:w-full h-full rounded-3xl p-3 lg:p-6 border border-borderColor group">
                 <CardItem translateZ="100" className="w-full mb-5">
                     <Image
                         src={image}
@@ -18,20 +18,22 @@ const ProjectCard = ({ proj }) => {
                         alt="thumbnail"
                     />
                 </CardItem>
-                <CardItem
-                    translateZ="50"
-                    className="text-2xl font-bold text-white dark:text-white"
-                >
-                    {title}
-                </CardItem>
-                <CardItem
-                    as="p"
-                    translateZ="60"
-                    className="text-lg text-gray-300 max-w-[30rem] mt-2 dark:text-neutral-300"
-                >
-                    {about}
-                </CardItem>
-                <div className="flex justify-between items-center mt-20">
+                <div className='flex-grow'>
+                    <CardItem
+                        translateZ="50"
+                        className="text-2xl font-bold text-white dark:text-white flex-grow"
+                    >
+                        {title}
+                    </CardItem>
+                    <CardItem
+                        as="p"
+                        translateZ="60"
+                        className="text-lg text-gray-300 max-w-[30rem] mt-2 dark:text-neutral-300 flex-grow"
+                    >
+                        {about}
+                    </CardItem>
+                </div>
+                <div className="flex justify-between items-center mt-5">
                     <CardItem
                         translateZ={20}
                         as={Link}

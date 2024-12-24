@@ -51,7 +51,7 @@ const Projects = () => {
                     :
                     projects.length > 0
                         ?
-                        <div className="grid grid-cols-1 md:grid-cols-2 xl:gap-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:gap-8 items-stretch">
                             {
                                 projects.map((project, index) => <ProjectCard key={index} proj={project} />)
                             }

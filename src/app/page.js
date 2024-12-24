@@ -5,7 +5,7 @@ import Hero from '@/components/LandingSection/Hero'
 import Navbar from '@/components/Nav/Navbar'
 import Projects from '@/components/Projects/Projects'
 import TechStacks from '@/components/TechStaks/TechStacks'
-import './globals.css'
+import './custom.css'
 
 
 export default function Home() {

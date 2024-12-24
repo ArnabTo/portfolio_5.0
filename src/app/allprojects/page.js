@@ -32,7 +32,7 @@ const Projects = () => {
         fetchProjects();
     }, [toast])
 
-    const skeletonArray = ['', '', '', '', ''];
+    const skeletonArray = ['', '', '', '', '', '', '', ''];
     return (
         <div className='max-w-7xl mx-auto my-16'>
             <span className="flex justify-between">
@@ -46,19 +46,17 @@ const Projects = () => {
 
             {
                 loading ?
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 my-8">
                         {
                             skeletonArray.map(() => (
-                                <div className="w-5/6 bg-[#1b1b2081] h-[30rem] rounded-lg p-10 space-y-5 mb-10">
+                                <div className="w-5/6 xl:w-full bg-[#1b1b2081] h-[30rem] rounded-2xl p-10 space-y-5 mb-10">
+                                    <div className="w-full h-56 bg-[#5555553f] rounded-lg"></div>
                                     <div className="w-24 h-8 bg-[#5555553f] rounded-lg"></div>
                                     <div className="w-full h-8 bg-[#5555553f] rounded-lg"></div>
-                                    <div className="grid grid-cols-4 gap-2">
-                                        <div className="w-full h-8 bg-[#5555553f] rounded-lg"></div>
-                                        <div className="w-full h-8 bg-[#5555553f] rounded-lg"></div>
-                                        <div className="w-full h-8 bg-[#5555553f] rounded-lg"></div>
-                                        <div className="w-full h-8 bg-[#5555553f] rounded-lg"></div>
+                                    <div className="flex justify-between items-center">
+                                        <div className="w-20 h-8 bg-[#5555553f] rounded-lg"></div>
+                                        <div className="w-20 h-8 bg-[#5555553f] rounded-lg mt-5"></div>
                                     </div>
-                                    <div className="w-full h-56 bg-[#5555553f] rounded-lg"></div>
                                 </div>
                             ))
                         }
@@ -66,7 +64,7 @@ const Projects = () => {
                     :
                     projects.length > 0
                         ?
-                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 my-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 my-8 items-stretch">
                             {
                                 projects.map((project, index) => <ProjectCard key={index} proj={project} />)
                             }
