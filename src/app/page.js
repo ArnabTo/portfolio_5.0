@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <main>
       <div className='relative z-20'>
-        <div className="w-full h-full absolute top-0 left-0 z-10 fbg"></div>
         <Navbar />
         <Hero />
         <AboutSec />

@@ -42,7 +42,7 @@ const Projects = () => {
 
     return (
         <div className="max-w-7xl p-5 xl:px-32 lg:mx-auto" id='projs'>
-            <h1 className="text-center lg:text-start text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
+            <h1 className="text-center text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
                 Latest Projects
             </h1>
             {
