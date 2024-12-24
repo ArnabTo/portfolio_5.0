@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useRef, useState, useEffect } from "react";
-
+import '../../app/globals.css'
 export const BackgroundBeamsWithCollision = ({
   children,
   className
@@ -67,10 +67,11 @@ export const BackgroundBeamsWithCollision = ({
     (<div
       ref={parentRef}
       className={cn(
-        "h-screen bg-gradient-to-b from-[#0b011d] to-[#000000] relative flex items-center w-full justify-center overflow-hidden mb-32",
+        "h-screen bg-gradient-to-b from-[#0b011d] to-[#000000] relative z-20 flex items-center w-full justify-center overflow-hidden mb-32",
         // h-screen if you want bigger
         className
       )}>
+     <div className="w-full h-full absolute top-0 left-0 z-0 fbg"></div>
       {beams.map((beam) => (
         <CollisionMechanism
           key={beam.initialX + "beam-idx"}

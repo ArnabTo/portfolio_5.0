@@ -71,3 +71,11 @@
 body{
   background: black;
 }
+
+.fbg{
+  background-image: url("./../../public/noise.svg");
+  background-size: 400px;
+  background-repeat: repeat;
+  opacity: 0.05;
+  z-index: -1;
+}

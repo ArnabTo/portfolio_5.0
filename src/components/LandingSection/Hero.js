@@ -20,12 +20,10 @@ const Hero = () => {
     document.body.removeChild(fileLInk);
   };
 
-  
   return (
-
     <BackgroundBeamsWithCollision>
       <div>
-        <div className="p-4 max-w-7xl mx-auto mt-28 lg:mt-40 relative z-10 w-full pt-20 md:pt-0">
+        <div className="p-4 max-w-7xl mx-auto mt-28 lg:mt-40 relative z-20 w-full pt-20 md:pt-0">
           <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-[#a434faf8] bg-opacity-50">
             Hi, I'm <br /> Arnab Saha.
           </h1>
@@ -38,11 +36,6 @@ const Hero = () => {
               Resume
             </span>
           </button>
-          {/* <span className='flex justify-center my-4 gap-4'>
-            <Link href='https://github.com/ArnabTo' className='text-white hover:text-[#8F00FF] transition-all'><IconBrandGithubFilled size={42} /></Link>
-            <Link href='https://www.linkedin.com/in/itsarnab/' className='text-white hover:text-[#8F00FF] transition-all'><IconBrandLinkedin size={42} /></Link>
-            <Link href='mailto:arnabs929@gmail.com' className='text-white hover:text-[#8F00FF] transition-all'><IconMailFilled size={42} /></Link>
-          </span> */}
           <span className='flex flex-col md:flex-row items-center justify-center my-4 gap-2'>
             <Link href='https://github.com/ArnabTo'>
               <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">

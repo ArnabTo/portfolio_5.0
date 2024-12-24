@@ -41,7 +41,7 @@ const Projects = () => {
     }, [projects.data, toast])
 
     return (
-        <div className="max-w-7xl mx-4 lg:mx-auto" id='projs'>
+        <div className="max-w-7xl p-5 xl:px-32 lg:mx-auto" id='projs'>
             <h1 className="text-center lg:text-start text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
                 Latest Projects
             </h1>
@@ -51,7 +51,7 @@ const Projects = () => {
                     :
                     projects.length > 0
                         ?
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:gap-10">
                             {
                                 projects.map((project, index) => <ProjectCard key={index} proj={project} />)
                             }

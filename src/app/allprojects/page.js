@@ -16,7 +16,7 @@ const Projects = () => {
         const fetchProjects = async () => {
 
             try {
-                const response = await axios.get('/api/get-projects', { cache: 'no-store'});
+                const response = await axios.get('/api/get-projects', { cache: 'no-store' });
                 setProjects(response.data.data || []);
 
             } catch (error) {
@@ -66,7 +66,7 @@ const Projects = () => {
                     :
                     projects.length > 0
                         ?
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 my-8">
                             {
                                 projects.map((project, index) => <ProjectCard key={index} proj={project} />)
                             }
