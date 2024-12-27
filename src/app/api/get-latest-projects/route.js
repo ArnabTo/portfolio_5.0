@@ -5,7 +5,7 @@ export async function GET() {
     await connectDB();
 
     try {
-        const projects = await Project.find().sort({ createdAt: -1 }).limit(4);
+        const projects = await Project.find().sort({ createdAt: -1 }).limit(4).lean({ cache: 'no-store' });
 
         if (!projects || projects.length === 0) {
             return new Response(JSON.stringify({

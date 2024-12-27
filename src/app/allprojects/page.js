@@ -16,7 +16,8 @@ const Projects = () => {
         const fetchProjects = async () => {
 
             try {
-                const response = await axios.get('/api/get-projects', { cache: 'no-store' });
+                const response = await axios.get('/api/get-projects',{}, { cache: 'no-store' });
+                // const response = await fetch.get('/api/get-projects',{}, { cache: 'no-store' });
                 setProjects(response.data.data || []);
 
             } catch (error) {
