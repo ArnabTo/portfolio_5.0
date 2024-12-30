@@ -57,8 +57,8 @@ const AboutSec = () => {
     ];
 
     const rows = [];
-    for (let i = 0; i < images.length; i += 4) {
-        rows.push(images.slice(i, i + 4));
+    for (let i = 0; i < images.length; i += 5) {
+        rows.push(images.slice(i, i + 5));
     }
 
     return (
