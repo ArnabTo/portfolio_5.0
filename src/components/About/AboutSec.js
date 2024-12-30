@@ -38,6 +38,8 @@ const AboutSec = () => {
     };
 
     const images = [
+        "https://i.ibb.co/ncRWbLt/aba974cebcbbd9b696a0016e65451abc.jpg",
+        "https://i.ibb.co/2MSWB30/thumb3.png",
         "https://i.ibb.co/Dr2RK4t/Mindflow-10-05-2024-09-53-PM.png",
         "https://i.ibb.co/qxQr81t/Blog-Verse-10-05-2024-09-53-PM.png",
         "https://i.ibb.co/Brpt3B8/Anno-Feed-10-05-2024-09-52-PM.png",
