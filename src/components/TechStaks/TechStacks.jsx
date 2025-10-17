@@ -66,7 +66,7 @@ const TechStacks = () => {
         <div className='mb-40'>
             <div className="max-w-7xl mx-auto mb-10">
                 <div className="mb-20 pt-52">
-                    <h1 className="text-center text-lg md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600">
+                    <h1 className="text-center text-lg md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-indigo-200 to-indigo-600">
                         Explore my
                     </h1>
                     <button className=" bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 my-2 text-white flex justify-center items-center mx-auto">
@@ -93,7 +93,7 @@ const TechStacks = () => {
                                 />
                             </svg>
                         </div>
-                        <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-purple-400/0 via-purple-400/90 to-purple-400/0 transition-opacity duration-500 group-hover:opacity-40" />
+                        <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-indigo-400/0 via-indigo-400/90 to-indigo-400/0 transition-opacity duration-500 group-hover:opacity-40" />
                     </button>
                 </div>
 

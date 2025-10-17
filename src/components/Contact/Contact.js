@@ -21,7 +21,7 @@ const Contact = () => {
     }, []);
     return (
         <div className="max-w-6xl mx-auto" id='cont'>
-            <h1 className="text-center lg:text-start text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 to-purple-600 my-4">
+            <h1 className="text-center lg:text-start text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-indigo-200 to-indigo-600 my-4">
                 Contact
             </h1>
             <div className=" md:grid grid-cols-1 lg:grid-cols-5 lg:grid-rows-4 gap-4">
@@ -45,7 +45,7 @@ const Contact = () => {
                             </div>
                             <Textarea id="comment" name='message' placeholder="Leave a comment..." required rows={4} />
                         </div>
-                        <button className='bg-zinc-900 border-[1px] border-[#67676720] p-4 hover:bg-[#8F00FF] text-white transition-all delay-75 rounded-md' type="submit">Submit</button>
+                        <button className='bg-zinc-900 border-[1px] border-[#67676720] p-4 hover:bg-indigo-600 text-white transition-all delay-75 rounded-md' type="submit">Submit</button>
                     </form>
                 </div>
                 <Link className="col-start-4 my-2 md:my-0 flex justify-between items-center" style={customBg} href='https://www.facebook.com/profile.php?id=100040177386596'><Facebook className="text-white" /><ExternalLink className="text-white" /></Link>

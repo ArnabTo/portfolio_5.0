@@ -6,16 +6,18 @@ import Navbar from '@/components/Nav/Navbar'
 import Projects from '@/components/Projects/Projects'
 import TechStacks from '@/components/TechStaks/TechStacks'
 import './custom.css'
+import ExperienceSec from '@/components/Experience/Exp_sec'
 
 
 export default function Home() {
   return (
     <main>
-      <div className='relative z-20'>
+      <div className='relative z-20 bg-[#060606]'>
         <Navbar />
         <Hero />
         <AboutSec />
         <TechStacks />
+        <ExperienceSec/>
         <Projects />
         <Contact />
       </div>

@@ -7,7 +7,7 @@ import { IconBrandLinkedin } from '@tabler/icons-react';
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
 const Hero = () => {
 
-  const words = ['Front-end Developer', 'MERN stack Developer'];
+  const words = ['Junior Software Developer', 'Full-stack Developer'];
 
   const downlaodResume = () => {
     const resumeFileId = '1GCq0v4joSEcY0paVdS_qFsIcVi6N0Zkl';
@@ -24,7 +24,7 @@ const Hero = () => {
     <BackgroundBeamsWithCollision>
       <div>
         <div className="p-4 max-w-7xl mx-auto mt-28 lg:mt-40 relative z-20 w-full pt-20 md:pt-0">
-          <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-[#a434faf8] bg-opacity-50">
+          <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-[#4e34faf8] bg-opacity-50">
             Hi, I'm <br /> Arnab Saha.
           </h1>
           <div className='text-2xl md:text-5xl text-center font-bold my-2 md:my-5 bg-clip-text '>

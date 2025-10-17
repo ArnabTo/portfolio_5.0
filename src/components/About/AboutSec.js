@@ -62,8 +62,8 @@ const AboutSec = () => {
     }
 
     return (
-        <div className="relative pt-10 pb-10" ref={containerRef}>
-            <div className="absolute top-0 left-0 right-0 bottom-0 grid grid-cols-1 gap-4 p-4 opacity-20 overflow-hidden -z-10">
+        <div className="relative" ref={containerRef}>
+            <div className="absolute top-0 left-0 right-0 bottom-0 grid grid-cols-1 gap-4 opacity-20 overflow-hidden -z-10">
                 {rows.map((row, index) => (
                     <ImageRow key={index} images={row} direction={index % 2 === 0 ? "left" : "right"} />
                 ))}
